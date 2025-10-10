@@ -17,7 +17,7 @@ Date:
 
 Quest 1: What clear cover be provided for a beam which is part of a bridge deck to be constructed over the Arabian Sea, along the western cost of Mumbai.
 
-Answer.
+[Answer 1.](Ques_1.html)
 
 Ques 2: Analysis for the maximum BM to be considered for the design of the landing slab of a staircase shown in the figure, taking total design lead on landing and flight as 10 KN/m², X = 0.45m, Y = 0.6m & G=2.5m. Clear width of staircase is 2.4m and brick walls supporting Staircase have thickness of 250m.
 
