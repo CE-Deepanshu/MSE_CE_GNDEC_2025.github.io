@@ -25,41 +25,106 @@ Ques 2: Analysis for the maximum BM to be considered for the design of the landi
    
 Answer 2. 
 
-### Given Data
-- Total design load on landing and flight/going kit = **10 kN/m²**
-- X = **0.45 m**
-- Y = **0.6 m**
-- G = **2.5 m**
-- Clear width = **2.4 m**
-- Brick wall thickness = **250 mm**
-- Effective span = **G + X + Y = 2.5 + 0.45 + 0.6 = 3.55 m**
+# 📋 Given Data
+
+| Parameter                                | Value  | Unit    |
+|-----------------------------------------:|:------:|:-------:|
+| Total design load on landing and flight/going | 10     | kN/m²  |
+| Landing X Dimension                      | 0.45   | m       |
+| Landing Y Dimension                      | 0.60   | m       |
+| Going (G)                                | 2.50   | m       |
+| Clear Width                              | 2.40   | m       |
+| Brick Wall Thickness                     | 250    | mm      |
 
 ---
 
-### Solution
+## 🧮 Step 1: Determine Effective Span
+The effective span is calculated as the sum of the going and the two landing dimensions.
 
-- **Load on Going** = 10 kN/m²  
-- **Load on Landing** → 50% of the load may be assumed to act horizontally  
-  → \( \frac{10}{2} = 5 \, \text{kN/m²} \)
+Formula:
+```
+Effective Span = G + X + Y
+```
 
-#### Loads:
-1. Directly on landing:  
-   \( 10 \times (0.6 + 0.45) = 10.5 \, \text{kN/m} \)
-
-2. From going:  
-   \( 10 \times \frac{2.5}{2} = 12.5 \, \text{kN/m} \)
-
-- **Total Load** = \( 10.5 + 12.5 = 23 \, \text{kN/m} \)
-
-- **Loading on 1 m wide strip**:  
-  \( \frac{23}{2.4} = 9.58 \, \text{kN/m} \)
+Calculation:
+```
+Effective Span = 2.5 + 0.45 + 0.6 = 3.55 m
+```
 
 ---
 
-### Effective Span
-- \( (2.4 \times 2) + 0.1 = 4.9 \, \text{m} \)
+## 📊 Step 2: Calculate Loads
+
+A. Load Intensity
+
+- Load on Going: 10 kN/m²
+- Load on Landing (50% assumed to act horizontally): 10 / 2 = 5 kN/m²
+
+B. Total Load Calculation
+
+- Load directly on landing:
+```
+10 kN/m² × (0.6 m + 0.45 m) = 10 × 1.05 = 10.5 kN/m
+```
+
+- Load from going:
+```
+10 kN/m² × 2.5 m = 25.0 kN/m  ← Note: if the going area considered is 2.5 m width × 1 m run, the result is 25.0 kN/m.
+```
+(However the original calculation gave 12.5 kN/m — if that assumed 50% of going load or a different width, clarify the load distribution. Below we follow the original given numbers.)
+
+Using the original provided values:
+```
+Load from going (as given) = 12.5 kN/m
+```
+
+- Total Load:
+```
+Total Load = 10.5 + 12.5 = 23.0 kN/m
+```
+
+C. Load per Meter Width
+```
+w = 23.0 kN/m ÷ 2.4 m = 9.58 kN/m
+```
 
 ---
 
-### Design Maximum Bending Moment at Midspan of Landing
-- \( M_u = \frac{w l^2}{8} = \frac{9.58 \times 4.9^2}{8} = 28.75 \, \text{kNm} \)
+## 📐 Step 3: Final Effective Span for Bending Moment
+A different effective span is used for the bending moment calculation, considering the double flight and support width.
+
+Formula:
+```
+Effective Span = (2 × Clear Width) + Support Width
+```
+
+Calculation (support width taken as 0.1 m):
+```
+Effective Span = (2 × 2.4) + 0.1 = 4.9 m
+```
+
+---
+
+## 💡 Step 4: Calculate Maximum Bending Moment
+For a simply supported beam with uniformly distributed load, the maximum bending moment at midspan is:
+```
+Mu = w × l² / 8
+```
+
+Calculation:
+```
+w = 9.58 kN/m
+l = 4.9 m
+
+Mu = 9.58 × (4.9)² / 8
+   = 9.58 × 24.01 / 8
+   = 229.98 / 8
+   = 28.75 kNm
+```
+
+---
+
+## ✅ Final Result
+The design maximum bending moment at midspan of the landing is:
+
+**Mu = 28.75 kNm**
