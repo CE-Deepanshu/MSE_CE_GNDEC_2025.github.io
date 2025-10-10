@@ -263,3 +263,5 @@ Spacing = (Area of one bar × 1000) / required_area_per_meter
 ## Summary / Provided reinforcement
 - Main reinforcement: 3 nos. 10 mm Ø bars (Ast provided = 235.6 mm²)  
 - Distribution bars: 8 mm Ø @ 270 mm c/c
+
+<img width="1536" height="1024" alt="tread stairs" src="https://github.com/user-attachments/assets/37047e88-620b-4337-a31c-a98487cbf51c" />
