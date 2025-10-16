@@ -355,7 +355,7 @@ Mu = (Wu,DL + Wu,LL) × l²  = (90 + 45) × 4.8²  = 276.48 kNm
 - 4.8 — 322.5 Nm
 - 5.5² — 551105 kN·m
 
-# Ques 5 — Design of 2nd span of continuous beam (QU)
+# Ques 5 — Design of 2nd span of continuous beam of question 4.
 
 ## Given
 - Clear span (2nd span): 4.75 m  
