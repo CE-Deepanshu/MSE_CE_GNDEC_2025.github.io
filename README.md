@@ -265,3 +265,86 @@ Spacing = (Area of one bar × 1000) / required_area_per_meter
 - Distribution bars: 8 mm Ø @ 270 mm c/c
 
 <img width="1536" height="1024" alt="tread stairs" src="https://github.com/user-attachments/assets/37047e88-620b-4337-a31c-a98487cbf51c" />
+
+# Ques 4 — Design shear forces and bending moments (as per IS 456)
+
+Find design shear forces and bending moments at critical sections of a five-span continuous reinforced beam supported on masonry supports of 300 mm each.  
+Clear spans from left to right: 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m.  
+Beam loading: dead load (including self weight) = 60 kN/m and imposed (live) load at service level = 30 kN/m.
+
+Span layout (schematic):
+
+SF1  SF2  SF3  SF4  SF5
+M1  MU  M2  MS  M3  MS  M2  MU  M1
+|---4.5m---|--4.75m--|---5.0m---|--4.75m--|---4.5m---|
+Supports: 300 mm each (masonry)
+
+---
+
+## Given data
+
+- Clear spans (left → right): 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m  
+- Support width (masonry): 300 mm = 0.30 m  
+- Dead load (service): 60 kN/m (incl. self weight)  
+- Imposed (live) load (service): 30 kN/m
+
+---
+
+## Design (factored) uniformly distributed loads (using 1.5 load factor)
+
+```
+Wu,DL = 60 × 1.5 = 90 kN/m
+Wu,LL = 30 × 1.5 = 45 kN/m
+```
+
+Total factored UDL (where needed) = 90 + 45 = 135 kN/m
+
+---
+
+## Effective spans (clear span + support width)
+
+(Use support width = 0.30 m added to the clear span at the relevant span)
+
+```
+For 4.5 m span: 4.5 + 0.3 = 4.8 m
+For 4.75 m span: 4.75 + 0.3 = 5.05 m
+For 5.0 m span: 5.0 + 0.3 = 5.3 m
+```
+
+---
+
+## Shear Forces
+
+1. At end supports (SF1)
+```
+SF1 = ((0.4 × 90) + (0.45 × 45)) × 4.8 = 270 kN
+```
+
+2. At supports next to the end supports
+
+2.1 Outer side (SF2)
+```
+SF2 = ((0.5 × 90) + (0.6 × 45)) × 4.8 = 388.8 kN
+```
+
+2.2 Inner side (SF3)
+```
+SF3 = ((0.55 × 90) + (0.6 × 45)) × 5.05 = 386.325 kN
+```
+
+3. At all other interior supports (SF4)
+```
+SF4 = ((0.5 × 90) + (0.6 × 45)) × 5.3 = 381.6 kN
+```
+
+---
+
+## Bending Moments
+
+1. Span moments (example: near middle of end span)
+```
+(Moment formula as used)
+Mu = (Wu,DL + Wu,LL) × l²  = (90 + 45) × 4.8²  = 276.48 kNm
+```
+
+(End)
