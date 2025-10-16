@@ -346,5 +346,16 @@ SF4 = ((0.5 × 90) + (0.6 × 45)) × 5.3 = 381.6 kN
 (Moment formula as used)
 Mu = (Wu,DL + Wu,LL) × l²  = (90 + 45) × 4.8²  = 276.48 kNm
 ```
+# Effective span and Support Moments
 
-(End)
+- Effective span
+- Support Moments
+- 2 Support Moments
+- At support next to Open
+- At other Interior support
+
+## M5
+
+- 4.8 — 322.5 Nm
+- 5.5² — 551105 kN·m
+
