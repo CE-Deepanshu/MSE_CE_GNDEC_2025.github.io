@@ -272,12 +272,8 @@ Find design shear forces and bending moments at critical sections of a five-span
 Clear spans from left to right: 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m.  
 Beam loading: dead load (including self weight) = 60 kN/m and imposed (live) load at service level = 30 kN/m.
 
-Span layout (schematic):
+<img width="810" height="252" alt="image" src="https://github.com/user-attachments/assets/525c9de1-a2b2-4470-88d0-5b593c2c9492" />
 
-SF1  SF2  SF3  SF4  SF5
-M1  MU  M2  MS  M3  MS  M2  MU  M1
-|---4.5m---|--4.75m--|---5.0m---|--4.75m--|---4.5m---|
-Supports: 300 mm each (masonry)
 
 ---
 
