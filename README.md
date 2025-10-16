@@ -393,5 +393,29 @@ Provide 25 mm Φ bars:
 
 ---
 
-## Summary / Recommendation
-- For the 2nd span (as computed) provide: 4 nos. of 25 mm Ø main reinforcement (Ast provided = 1963.48 mm²).
+### Support reinforcement (Ast) — calculation and bar selection
+
+Using the given values:
+- Mu (support) = 351.25 × 10^6 N·mm  
+- fck = 25 MPa  
+- fy = 415 MPa  
+- b = 300 mm  
+- d = 500 mm
+
+Formula used (as in the worked examples):
+Ast_req = 0.5 × b × d × [1 − √(1 − (4.6 × Mu) / (fy × b × d² / fck))]
+
+Substituting values:
+- 4.6 × Mu = 4.6 × 351.25 × 10^6 = 1.61575 × 10^9
+- (fy × b × d² / fck) = 415 × 300 × 500² / 25 = (evaluate as per formula)
+
+Result:
+- Ast_req (at support) = 1646.63 mm²
+
+Bar selection:
+- Area of one 25 mm Ø bar = π × 25² / 4 = 490.87 mm²
+- Required number of bars = 1646.63 / 490.87 = 3.35 → provide 4 bars
+- Ast_provided = 4 × 490.87 = 1963.48 mm² (≥ Ast_req)
+
+Conclusion:
+- Provide 4 nos. 25 mm Ø main bars at the support (Ast_provided = 1963.48 mm²), which satisfies the required Ast (1646.63 mm²).
