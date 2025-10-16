@@ -355,3 +355,43 @@ Mu = (Wu,DL + Wu,LL) × l²  = (90 + 45) × 4.8²  = 276.48 kNm
 - 4.8 — 322.5 Nm
 - 5.5² — 551105 kN·m
 
+# Ques 5 — Design of 2nd span of continuous beam (QU)
+
+## Given
+- Clear span (2nd span): 4.75 m  
+- Support width: 0.30 m  
+- Effective span, l = 4.75 + 0.30 = 5.05 m  
+- Assumed overall dimensions: b = 300 mm, d = 500 mm  
+- Provided bar considered: 25 mm Ø (area of one 25 mm bar = 490.87 mm²)  
+- Material properties and moments are used as given in the problem statements below.
+
+---
+
+## Calculation of steel required (mid-span / as given)
+
+Formula used (as given):
+```
+Ast,req = 0.5 · bd · [1 − √(1 − (4.6 · Mu) / (fy · bd² / fck))]
+```
+
+Using the provided numeric substitution:
+- Mu (given) = 239.1 × 10^6 N·mm  
+- fck = 35 MPa (as used in the mid-span calculation)  
+- fy = 415 MPa  
+- b = 300 mm  
+- d = 500 mm
+
+Numerical result (as provided):
+```
+Ast,req = 1613.1 mm²
+```
+
+Provide 25 mm Φ bars:
+- Area of one 25 mm Φ = π × 25² / 4 = 490.87 mm²  
+- Number of bars = 1613.1 / 490.87 = 3.28 → provide 4 bars  
+- Ast,provided = 4 × 490.87 = 1963.48 mm²
+
+---
+
+## Summary / Recommendation
+- For the 2nd span (as computed) provide: 4 nos. of 25 mm Ø main reinforcement (Ast provided = 1963.48 mm²).
