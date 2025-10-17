@@ -409,4 +409,101 @@ Substituting values:
 - 4.6 × Mu = 4.6 × 351.25 × 10^6 = 1.61575 × 10^9
 - (fy × b × d² / fck) = 415 × 300 × 500² / 25 = (evaluate as per formula)
 
+Ques 6. Design slab of the corner bed room at second floor,
+which is part of 5 storeyed apartment to se
+constructed at Ludhiana. The inside size of room is
+4.25m x 5.50m.
+Answer Given data
+Size of room = 4.25m x5.5m
+lx = 4.25m
+ly = 5.5m
+Assume width of support =230mm
+1. Calculate depth
+Assume total depth of slabh=200mm
+clear cover = 20mm (mild exp. condt.)
+Use 10mm φ bar
+Eff. depth of slabh D-20-φ/2 = 200-20-10/2 = 175mm
+dy = D-20-φ-φ/2 = 200-20-12-12/2 = 162mm
+Grade of conc. = M25
+2. Steel = Fe 415
 
+2. Design Loads
+Design load Dead load = 25 x0.2 = 5KN/m²
+live load = 3KN/m²
+```
+Factored (design) load = 1.5 (DL + LL) = 1.5(513) = 12KN/m^2
+```
+
+3. Eff span
+lx
+lx = 4.25 + 0.174 = 4.424m
+lx = 4.25 + 0.23 = 4.48m
+Take lx = 4.424m
+
+ly
+ly = 5.5 + 0.162 = 5.662m
+ly = 5.5 + 0.23 = 5.73m
+Take ly = 5.662m
+
+4. Calculation of Moment and steel
+Aspect Ratio = ly/lx = 5.661/4.424 = 1.279
+
+Type of Panel of moment considered - Two adjacent edges discontine
+
+4.1 Negative moment at continuous edge
+ax = -0.063 ay = -0.037
+Mx = ax W lx^2
+= -0.063 x 12 x 4.424^2
+Mx = -14.796 kNm
+My = ay W lx^2
+= -0.037 x 12 x 4.424^2
+My = -8.689 kNm
+
+Astx = 0.5 fck/fy [1 - √1 - 4.6 Mux / fck bd^2 ] bd
+
+= 0.5x25/415 [1 - √1 - 4.6 x -14.796 x 10^6 / 25 x 1000 x 174^2 ] 1000 x 174
+Astx = 230.56 mm^2
+
+Use 12mm Ø bar
+Spacing = Aea of 1 - nØ x 1000 / Astx
+= 113.09 x 1000 / 230.56 = 490.5mm
+
+Provide 12mm ф bar @300mm c/c
+
+Ast,y Required = 0.5fck [1 - √ 1- 4.6My /fck bd²] bdy
+= 0.5 x 25 [ 1 - √ (4.6x8.68x10⁶) / 25x1000x0.162² ] 1000 x 0.162
+fy / 415
+Ast, y = 146.432 mm²
+
+Use 12 mm ф bar
+Spacing = Area 1-1 ф x1000 = 113.09 x 1000 = 772.3 mm
+Ast, y / 146.432
+
+Provide 12 mm ф @ 300 mm c/c
+
+Positive moment at midspan
+αx = 0.048 αy = 0.035
+Mx = αx w lx²
+= 0.048 x 12 x 4.424²
+Mx = 11.273 kNm
+
+My = αy w lx²
+= 0.035 x 12 x 4.424²
+My = 8.22 kNm
+
+Ast, x = 0.5 x 25 / 415 [ 1- √ 1 - (4.6 x 11.273 x 10⁶) / 25 x 1000 x 174² ] 1000 x 174
+Ast, x = 182.72 mm²
+
+Use 12 mm ф bar
+Spacing = 113.09 x 1000 / 182.72 = 618.9 mm
+
+Provide 12 mm ф bar @ 300 mm c/c
+
+Asty = 0.5 x 25 / 415 [ 1- √ 1 - (4.6 x 8.22 x 10⁶) / 25 x 1000 x 162² ] 1000 x 162 = 142.693 mm².
+
+Use 12mm ɸ bar
+
+Spacing = 113.09 x 1000 = 792.54mm
+            142.693
+
+Provide 12mm ɸ bar @ 300mm c/c
