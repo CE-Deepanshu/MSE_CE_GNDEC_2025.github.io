@@ -409,7 +409,8 @@ Substituting values:
 - 4.6 × Mu = 4.6 × 351.25 × 10^6 = 1.61575 × 10^9
 - (fy × b × d² / fck) = 415 × 300 × 500² / 25 = (evaluate as per formula)
 
-Ques 6. Design slab of the corner bed room at second floor, which is part of 5 storeyed apartment to se constructed at Ludhiana. The inside size of room is 4.25m x 5.50m.
+## Ques 6. Design slab of the corner bed room at second floor, which is part of 5 storeyed apartment to be constructed at Ludhiana. The inside size of room is 4.25m x 5.50m.
+
 
 Answer Given data
 
