@@ -537,3 +537,5 @@ Spacing = 113.09 x 1000 = 792.54mm
             142.693
 
 Provide 12mm ɸ bar @ 300mm c/c
+
+<img width="329" height="353" alt="image" src="https://github.com/user-attachments/assets/e6246736-9713-4216-aa93-28d990545612" />
