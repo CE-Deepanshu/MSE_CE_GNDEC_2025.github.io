@@ -12,8 +12,8 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 | Max Marks        | 24                 | Time Duration | 1 Hr. 30 Min.    |
 | Date of MST      | 23/09/2025         | Roll Number   | 2214078          |
 
-MSE-1
-Date: 
+**MSE-1**
+**Date:23/09/2025** 
 
 **Quest 1:** What clear cover be provided for a beam which is part of a bridge deck to be constructed over the Arabian Sea, along the western cost of Mumbai.
 
@@ -21,8 +21,8 @@ Date:
 
 **Ques 2:** Analysis for the maximum BM to be considered for the design of the landing slab of a staircase shown in the figure, taking total design lead on landing and flight as 10 KN/m², X = 0.45m, Y = 0.6m & G=2.5m. Clear width of staircase is 2.4m and brick walls supporting Staircase have thickness of 250m.
 
-<img width="1536" height="1024" alt="Stairs" src="https://github.com/user-attachments/assets/1f131076-5ea4-4ae4-bdf0-4f12d1c30c16" />
-   
+<img width="542" height="342" alt="image" src="https://github.com/user-attachments/assets/39c84742-f954-45bf-9633-cac11d9f32a7" />
+
 **Answer 2:** 
 
 ### 📋 Given Data
