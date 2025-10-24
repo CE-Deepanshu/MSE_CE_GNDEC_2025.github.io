@@ -549,4 +549,18 @@ Spacing = 113.09 x 1000 = 792.54mm
 
 **Provide 12mm ɸ bar @ 300mm c/c**
 
+### Torsion Reinforcement
+Read **Clause D-1.8-1.11 Page no. 90** for torsion reinforcement.
+
+Ast,torsion = 3/4.Ast = 3/4 x 182.72 = 137.055mm²
+
+Assume dia. of torsion rebar = 8mm
+
+Area of 1-ϕbar = π/4 x ϕ² = π/4 x 8² = 50.265mm² 
+
+Spacing = Area of 1-ϕbar/Ast,torsion x 1000 = 366.75 ≈ 300mm
+
+Generally torsion reinforcement is provided at extreme corners( not at edges over which slab is continous) within 1m distance from extreme corner and upto 1m in length.
+
+[**Detailed Drawing**]()
 <img width="329" height="353" alt="image" src="https://github.com/user-attachments/assets/e6246736-9713-4216-aa93-28d990545612" />
