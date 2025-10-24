@@ -15,17 +15,17 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 MSE-1
 Date: 
 
-Quest 1: What clear cover be provided for a beam which is part of a bridge deck to be constructed over the Arabian Sea, along the western cost of Mumbai.
+**Quest 1:** What clear cover be provided for a beam which is part of a bridge deck to be constructed over the Arabian Sea, along the western cost of Mumbai.
 
-Answer 1. Provide 50mm clear cover considering very severe condition - concrete exposed to coastal environment Acc. to table no. 16, IS 456 : 2000
+**Answer 1:** Provide 50mm clear cover considering very severe condition - concrete exposed to coastal environment Acc. to table no. 16, IS 456 : 2000
 
-Ques 2: Analysis for the maximum BM to be considered for the design of the landing slab of a staircase shown in the figure, taking total design lead on landing and flight as 10 KN/m², X = 0.45m, Y = 0.6m & G=2.5m. Clear width of staircase is 2.4m and brick walls supporting Staircase have thickness of 250m.
+**Ques 2:** Analysis for the maximum BM to be considered for the design of the landing slab of a staircase shown in the figure, taking total design lead on landing and flight as 10 KN/m², X = 0.45m, Y = 0.6m & G=2.5m. Clear width of staircase is 2.4m and brick walls supporting Staircase have thickness of 250m.
 
 <img width="1536" height="1024" alt="Stairs" src="https://github.com/user-attachments/assets/1f131076-5ea4-4ae4-bdf0-4f12d1c30c16" />
    
-Answer 2. 
+**Answer 2:** 
 
-# 📋 Given Data
+### 📋 Given Data
 
 | Parameter                                | Value  | Unit    |
 |-----------------------------------------:|:------:|:-------:|
@@ -38,7 +38,7 @@ Answer 2.
 
 ---
 
-## 🧮 Step 1: Determine Effective Span
+### 🧮 Step 1: Determine Effective Span
 The effective span is calculated as the sum of the going and the two landing dimensions.
 
 Formula:
@@ -53,7 +53,7 @@ Effective Span = 2.5 + 0.45 + 0.6 = 3.55 m
 
 ---
 
-## 📊 Step 2: Calculate Loads
+### 📊 Step 2: Calculate Loads
 
 A. Load Intensity
 
@@ -90,7 +90,7 @@ w = 23.0 kN/m ÷ 2.4 m = 9.58 kN/m
 
 ---
 
-## 📐 Step 3: Final Effective Span for Bending Moment
+### 📐 Step 3: Effective Span for Bending Moment
 A different effective span is used for the bending moment calculation, considering the double flight and support width.
 
 Formula:
@@ -105,7 +105,7 @@ Effective Span = (2 × 2.4) + 0.1 = 4.9 m
 
 ---
 
-## 💡 Step 4: Calculate Maximum Bending Moment
+### 💡 Step 4: Calculate Maximum Bending Moment
 For a simply supported beam with uniformly distributed load, the maximum bending moment at midspan is:
 ```
 Mu = w × l² / 8
@@ -119,21 +119,21 @@ l = 4.9 m
 Mu = 9.58 × (4.9)² / 8
    = 9.58 × 24.01 / 8
    = 229.98 / 8
-   = 28.75 kNm
+Mu = 28.75 kNm
 ```
 
 ---
 
-## ✅ Final Result
+### ✅ Final Result
 The design maximum bending moment at midspan of the landing is:
 
 **Mu = 28.75 kNm**
 
-Ques 3. Design stairs consisting of independent steps project from the face of RCC wall. The stairs will be part of a mall be constructed in Goa.
+**Ques 3.** Design stairs consisting of independent steps project from the face of RCC wall. The stairs will be part of a mall be constructed in Goa.
 
-Answer 3: 
+**Answer 3:** 
 
-# Assumptions
+## Assumptions
 - Width of flight = 1.5 m  
 - Riser = 150 mm  
 - Tread = 300 mm  
@@ -142,7 +142,7 @@ Answer 3:
 
 ---
 
-# Solution
+### Solution
 
 - It is desirable to make the actual width of the tread slab, B, about 10 mm more than the effective tread, so that there is a marginal overlap between adjacent tread slabs.  
   - B = 310 mm
@@ -152,9 +152,9 @@ Answer 3:
 
 ---
 
-## 1. Design loads
+### 1. Design loads
 
-### 1.1 Dead loads
+#### 1.1 Dead loads
 (i) Self weight of tread slab:
 ```
 25 × (0.15 × 0.31) = 1.162 kN/m
@@ -173,7 +173,7 @@ Page 3:
 Wu, DL = 1.348 × 1.5 = 2.022 kN/m
 ```
 
-### 1.2 Live load
+#### 1.2 Live load
 (i) Alternative I:
 ```
 Wu, LL = 5.0 × 0.3 × 1.5 = 2.250 kN/m
@@ -186,7 +186,7 @@ Wu, LL = 1.3 × 1.5 = 1.95 kN  (at free end)
 
 ---
 
-## Design & Moments
+### 2. Design Moments
 
 - Moment at fixed end due to dead load:
 ```
@@ -206,7 +206,7 @@ Mu = Mu, DL + Mu, LL = 2.27 + 2.93 = 5.20 kNm
 
 ---
 
-## Design of Main Bars
+### 3. Design of Main Bars
 
 - Assume clear cover = 20 mm (mild exposure) and bar diameter = 10 mm.  
 - Effective depth:
@@ -235,7 +235,7 @@ Ast provided = 3 × 78.54 = 235.62 mm²  (> 124 mm²)
 
 ---
 
-## Design of Distribution Bars
+### 4. Design of Distribution Bars
 
 - Minimum steel for distribution:
 ```
@@ -260,13 +260,13 @@ Spacing = (Area of one bar × 1000) / required_area_per_meter
 
 ---
 
-## Summary / Provided reinforcement
+### 5. Summary / Provided reinforcement
 - Main reinforcement: 3 nos. 10 mm Ø bars (Ast provided = 235.6 mm²)  
 - Distribution bars: 8 mm Ø @ 270 mm c/c
 
 <img width="1536" height="1024" alt="tread stairs" src="https://github.com/user-attachments/assets/37047e88-620b-4337-a31c-a98487cbf51c" />
 
-# Ques 4 — Design shear forces and bending moments (as per IS 456)
+**Ques 4** — Design shear forces and bending moments (as per IS 456)
 
 Find design shear forces and bending moments at critical sections of a five-span continuous reinforced beam supported on masonry supports of 300 mm each.  
 Clear spans from left to right: 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m.  
@@ -277,7 +277,7 @@ Beam loading: dead load (including self weight) = 60 kN/m and imposed (live) loa
 
 ---
 
-## Given data
+### Given data
 
 - Clear spans (left → right): 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m  
 - Support width (masonry): 300 mm = 0.30 m  
@@ -286,7 +286,9 @@ Beam loading: dead load (including self weight) = 60 kN/m and imposed (live) loa
 
 ---
 
-## Design (factored) uniformly distributed loads (using 1.5 load factor)
+### Solution
+
+### 1. Design (factored) uniformly distributed loads (using 1.5 load factor)
 
 ```
 Wu,DL = 60 × 1.5 = 90 kN/m
@@ -297,7 +299,7 @@ Total factored UDL (where needed) = 90 + 45 = 135 kN/m
 
 ---
 
-## Effective spans (clear span + support width)
+### 2. Effective spans (clear span + support width)
 
 (Use support width = 0.30 m added to the clear span at the relevant span)
 
@@ -309,7 +311,7 @@ For 5.0 m span: 5.0 + 0.3 = 5.3 m
 
 ---
 
-## Shear Forces
+### 3. Shear Forces
 
 1. At end supports (SF1)
 ```
@@ -335,14 +337,14 @@ SF4 = ((0.5 × 90) + (0.6 × 45)) × 5.3 = 381.6 kN
 
 ---
 
-## Bending Moments
+### 4. Bending Moments
 
 1. Span moments (example: near middle of end span)
 ```
 (Moment formula as used)
 Mu = (Wu,DL + Wu,LL) × l²  = (90 + 45) × 4.8²  = 276.48 kNm
 ```
-# Effective span and Support Moments
+### Effective span and Support Moments
 
 - Effective span
 - Support Moments
@@ -350,14 +352,14 @@ Mu = (Wu,DL + Wu,LL) × l²  = (90 + 45) × 4.8²  = 276.48 kNm
 - At support next to Open
 - At other Interior support
 
-## M5
+#### M5
 
 - 4.8 — 322.5 Nm
 - 5.5² — 551105 kN·m
 
-# Ques 5 — Design of 2nd span of continuous beam of question 4.
+**Ques 5:** — Design of 2nd span of continuous beam of question 4.
 
-## Given
+### Given
 - Clear span (2nd span): 4.75 m  
 - Support width: 0.30 m  
 - Effective span, l = 4.75 + 0.30 = 5.05 m  
@@ -367,7 +369,9 @@ Mu = (Wu,DL + Wu,LL) × l²  = (90 + 45) × 4.8²  = 276.48 kNm
 
 ---
 
-## Calculation of steel required (mid-span / as given)
+### Solution
+
+### 1. Calculation of steel required (mid-span / as given)
 
 Formula used (as given):
 ```
@@ -393,7 +397,7 @@ Provide 25 mm Φ bars:
 
 ---
 
-### Support reinforcement (Ast) — calculation and bar selection
+### 2. Support reinforcement (Ast) — calculation and bar selection
 
 Using the given values:
 - Mu (support) = 351.25 × 10^6 N·mm  
@@ -409,10 +413,10 @@ Substituting values:
 - 4.6 × Mu = 4.6 × 351.25 × 10^6 = 1.61575 × 10^9
 - (fy × b × d² / fck) = 415 × 300 × 500² / 25 = (evaluate as per formula)
 
-## Ques 6. Design slab of the corner bed room at second floor, which is part of 5 storeyed apartment to be constructed at Ludhiana. The inside size of room is 4.25m x 5.50m.
+**Ques 6:** Design slab of the corner bed room at second floor, which is part of 5 storeyed apartment to be constructed at Ludhiana. The inside size of room is 4.25m x 5.50m.
 
 
-Answer Given data
+**Answer 6:** Given data
 
 Size of room = 4.25m x5.5m
 
@@ -422,7 +426,7 @@ ly = 5.5m
 
 Assume width of support =230mm
 
-1. Calculate depth
+### 1. Calculate depth
 
 Assume total depth of slab = 200mm
 
@@ -437,7 +441,7 @@ dy = D-20-φ-φ/2 = 200-20-12-12/2 = 162mm
 Grade of conc. = M25
 Steel = Fe 415
 
-2. Design Loads
+### 2. Design Loads
 Design load Dead load = 25 x0.2 = 5KN/m²
 
 live load = 3KN/m²
@@ -445,7 +449,7 @@ live load = 3KN/m²
 Factored (design) load = 1.5 (DL + LL) = 1.5(513) = 12KN/m^2
 ```
 
-3. Eff span
+### 3. Eff span
 lx
 lx = 4.25 + 0.174 = 4.424m
 lx = 4.25 + 0.23 = 4.48m
@@ -456,25 +460,25 @@ ly = 5.5 + 0.162 = 5.662m
 ly = 5.5 + 0.23 = 5.73m
 Take ly = 5.662m
 
-4. Calculation of Moment and steel
+### 4. Calculation of Moment and steel
 Aspect Ratio = ly/lx = 5.661/4.424 = 1.279
 
 Type of Panel of moment considered - Two adjacent edges discontine
 
-4.1 Negative moment at continuous edge
+#### 4.1 Negative moment at continuous edge
 ax = -0.063 ay = -0.037
 
 Mx = αx W lx^2
 
 = -0.063 x 12 x 4.424^2
 
-Mx = -14.796 kNm
+**Mx = -14.796 kNm**
 
 My = αy W lx^2
 
 = -0.037 x 12 x 4.424^2
 
-My = -8.689 kNm
+**My = -8.689 kNm**
 
 Astx = 0.5 fck/fy [1 - √1 - 4.6 Mux / fck bd^2 ] bd
 
@@ -484,12 +488,12 @@ Astx = 230.56 mm^2
 
 Use 12mm Ø bar
 
-Spacing 
+Spacing
 = Area of 1 - 12Ø x 1000 / Astx
 
 = 113.09 x 1000 / 230.56 = 490.5mm
 
-Provide 12mm ф bar @300mm c/c
+**Provide 12mm ф bar @300mm c/c**
 
 Ast,y Required = 0.5fck [1 - √ 1- 4.6My /fck bd²] bdy
 
@@ -501,9 +505,9 @@ Use 12 mm ф bar
 Spacing = Area 1-12 ф x1000 = 113.09 x 1000 = 772.3 mm
 Ast, y / 146.432
 
-Provide 12 mm ф @ 300 mm c/c
+**Provide 12 mm ф @ 300 mm c/c**
 
-Positive moment at midspan
+#### 4.2 Positive moment at midspan
 
 αx = 0.048 αy = 0.035
 
@@ -511,13 +515,13 @@ Mx = αx w lx²
 
 = 0.048 x 12 x 4.424²
 
-Mx = 11.273 kNm
+**Mx = 11.273 kNm**
 
 My = αy w lx²
 
 = 0.035 x 12 x 4.424²
 
-My = 8.22 kNm
+**My = 8.22 kNm**
 
 Ast, x = 0.5 x 25 / 415 [ 1- √ 1 - (4.6 x 11.273 x 10⁶) / 25 x 1000 x 174² ] 1000 x 174
 
@@ -527,7 +531,7 @@ Use 12 mm ф bar
 
 Spacing = 113.09 x 1000 / 182.72 = 618.9 mm
 
-Provide 12 mm ф bar @ 300 mm c/c
+**Provide 12 mm ф bar @ 300 mm c/c**
 
 Asty = 0.5 x 25 / 415 [ 1- √ 1 - (4.6 x 8.22 x 10⁶) / 25 x 1000 x 162² ] 1000 x 162 = 142.693 mm².
 
@@ -536,6 +540,6 @@ Use 12mm ɸ bar
 Spacing = 113.09 x 1000 = 792.54mm
             142.693
 
-Provide 12mm ɸ bar @ 300mm c/c
+**Provide 12mm ɸ bar @ 300mm c/c**
 
 <img width="329" height="353" alt="image" src="https://github.com/user-attachments/assets/e6246736-9713-4216-aa93-28d990545612" />
