@@ -129,6 +129,9 @@ The design maximum bending moment at midspan of the landing is:
 
 **Mu = 28.75 kNm**
 
+<img width="733" height="331" alt="image" src="https://github.com/user-attachments/assets/f2f38b0b-56c3-4e2a-843e-69a7d3429b9a" />
+
+
 **Ques 3.** Design stairs consisting of independent steps project from the face of RCC wall. The stairs will be part of a mall be constructed in Goa.
 
 **Answer 3:** 
