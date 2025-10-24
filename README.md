@@ -12,6 +12,8 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 | Max Marks        | 24                 | Time Duration | 1 Hr. 30 Min.    |
 | Date of MST      | 23/09/2025         | Roll Number   | 2214078          |
 
+Blog- Experience of creatinng this innovative repository for complete solution of MSE-1
+
 **MSE-1**
 **Date:23/09/2025** 
 
