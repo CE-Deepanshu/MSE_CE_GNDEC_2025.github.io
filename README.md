@@ -550,7 +550,7 @@ Spacing = 113.09/142.693 x 1000 = 792.54mm
 
 **Provide 12mm ɸ bar @ 300mm c/c**
 
-### Torsion Reinforcement
+### 5. Torsion Reinforcement
 Read **Clause D-1.8-1.11 Page no. 90** for torsion reinforcement.
 
 Ast,torsion = 3/4.Ast = 3/4 x 182.72 = 137.055mm²
