@@ -544,8 +544,7 @@ Asty = 0.5 x 25 / 415 [ 1- √ 1 - (4.6 x 8.22 x 10⁶) / 25 x 1000 x 162² ] 10
 
 Use 12mm ɸ bar
 
-Spacing = 113.09 x 1000 = 792.54mm
-            142.693
+Spacing = 113.09/142.693 x 1000 = 792.54mm
 
 **Provide 12mm ɸ bar @ 300mm c/c**
 
@@ -562,5 +561,5 @@ Spacing = Area of 1-ϕbar/Ast,torsion x 1000 = 366.75 ≈ 300mm
 
 Generally torsion reinforcement is provided at extreme corners( not at edges over which slab is continous) within 1m distance from extreme corner and upto 1m in length.
 
-[**Detailed Drawing**]()
+[**Detailed Drawing**](MSE Q6.pdf)
 <img width="329" height="353" alt="image" src="https://github.com/user-attachments/assets/e6246736-9713-4216-aa93-28d990545612" />
