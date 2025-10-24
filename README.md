@@ -133,7 +133,7 @@ The design maximum bending moment at midspan of the landing is:
 
 **Answer 3:** 
 
-## Assumptions
+### Assumptions
 - Width of flight = 1.5 m  
 - Riser = 150 mm  
 - Tread = 300 mm  
@@ -266,9 +266,7 @@ Spacing = (Area of one bar × 1000) / required_area_per_meter
 
 <img width="1536" height="1024" alt="tread stairs" src="https://github.com/user-attachments/assets/37047e88-620b-4337-a31c-a98487cbf51c" />
 
-**Ques 4** — Design shear forces and bending moments (as per IS 456)
-
-Find design shear forces and bending moments at critical sections of a five-span continuous reinforced beam supported on masonry supports of 300 mm each.  
+**Ques 4:** Find design shear forces and bending moments(as per IS 456) at critical sections of a five-span continuous reinforced beam supported on masonry supports of 300 mm each.  
 Clear spans from left to right: 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m.  
 Beam loading: dead load (including self weight) = 60 kN/m and imposed (live) load at service level = 30 kN/m.
 
@@ -276,7 +274,7 @@ Beam loading: dead load (including self weight) = 60 kN/m and imposed (live) loa
 
 
 ---
-
+**Answer 4:**
 ### Given data
 
 - Clear spans (left → right): 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m  
@@ -450,15 +448,21 @@ Factored (design) load = 1.5 (DL + LL) = 1.5(513) = 12KN/m^2
 ```
 
 ### 3. Eff span
-lx
-lx = 4.25 + 0.174 = 4.424m
-lx = 4.25 + 0.23 = 4.48m
-Take lx = 4.424m
+lx (Shorter span)
 
-ly
+lx = 4.25 + 0.174 = 4.424m
+
+lx = 4.25 + 0.23 = 4.48m
+
+Take **lx = 4.424m**
+
+ly (Longer span)
+
 ly = 5.5 + 0.162 = 5.662m
+
 ly = 5.5 + 0.23 = 5.73m
-Take ly = 5.662m
+
+Take **ly = 5.662m**
 
 ### 4. Calculation of Moment and steel
 Aspect Ratio = ly/lx = 5.661/4.424 = 1.279
