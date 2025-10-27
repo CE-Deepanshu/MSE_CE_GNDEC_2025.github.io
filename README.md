@@ -561,6 +561,8 @@ Area of 1-ϕbar = π/4 x ϕ² = π/4 x 8² = 50.265mm²
 
 Spacing = Area of 1-ϕbar/Ast,torsion x 1000 = 366.75 ≈ 300mm
 
+**Provide 8mmϕ@300mmc/c**
+
 Generally torsion reinforcement is provided at extreme corners( not at edges over which slab is continous) within 1m distance from extreme corner and upto 1m in length.
 
 [**Detailed Drawing**](MSE Q6.pdf)
