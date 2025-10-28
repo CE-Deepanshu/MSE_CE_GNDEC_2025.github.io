@@ -55,18 +55,18 @@ The effective span is calculated as the sum of the going and the two landing dim
 Formula:
 ```
 Effective Span :
-1. Clear Width + effective depth
-2. Clear Width + support width/2 + support width/2
+1. Leff. = Clear Width + effective depth
+2. Leff. = Clear Width + support width/2 + support width/2
 ```
 Calculation:
 ```
-1. 2.4 + 0.154 = 2.554m
-2. 2.4 + 0.25/2 + 0.25/2 = 2.65 m
+1. Leff. = 2.4 + 0.154 = 2.554m
+2. Leff. = 2.4 + 0.25/2 + 0.25/2 = 2.65 m
 ```
 #### ✅ Effective span
 ```
 Consider effective span which is lesser in the above value
-Effective span of landing slab = 2.554 m
+Effective span of landing slab, Leff. = 2.554 m
 ```
 ---
 
