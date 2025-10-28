@@ -40,100 +40,80 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 
 ---
 
-### 🧮 Step 1: Determine Effective Span
+### 🧮 Step 1: Determine Effective depth (Refer Clause 23.21 (a) for simply supported beam, IS 456 : 2000)
+Calculation
+```
+centre to centre distance between landings = X+G+Y = 0.45+2.5+0.6 = 3.55m=3550 mm
+Thickness of slab = 3550/20 = 177.5~180 mm
+Assume dia. of bar 12 mm and clear cover 20 mm (mild exposure condition) = 180-20-12/2 = 154 mm
+```
+---
+
+### 🧮 Step 2: Determine Effective Span (Refer Clause 22.2 (a), IS 456 : 2000)
 The effective span is calculated as the sum of the going and the two landing dimensions.
 
 Formula:
 ```
-Effective Span = G + X + Y
+Effective Span :
+1. Clear Width + effective depth
+2. Clear Width + support width/2 + support width/2
 ```
-
 Calculation:
 ```
-Effective Span = 2.5 + 0.45 + 0.6 = 3.55 m
+1. 2.4 + 0.154 = 2.554m
+2. 2.4 + 0.25/2 + 0.25/2 = 2.65 m
 ```
-
+#### ✅ Effective span
+```
+Consider effective span which is lesser in the above value
+Effective span of landing slab = 2.554 m
+```
 ---
 
-### 📊 Step 2: Calculate Loads
+### 📊 Step 3: Calculate Loads acting on landing (assumed to be uniformly distributed)
 
-A. Load Intensity
-
-- Load on Going: 10 kN/m²
-- Load on Landing (50% assumed to act horizontally): 10 / 2 = 5 kN/m²
-
-B. Total Load Calculation
-
-- Load directly on landing:
+**A. Load Intensity**
 ```
-10 kN/m² × (0.6 m + 0.45 m) = 10 × 1.05 = 10.5 kN/m
+- Load on Going: Total design load on flight/going x G/2 = 10 x 2.5/2 = 12.5 kN/m
+- Load on Landing  = 10 kN/m
 ```
 
-- Load from going:
+**B. Total Load:**
 ```
-10 kN/m² × 2.5 m = 25.0 kN/m  ← Note: if the going area considered is 2.5 m width × 1 m run, the result is 25.0 kN/m.
-```
-(However the original calculation gave 12.5 kN/m — if that assumed 50% of going load or a different width, clarify the load distribution. Below we follow the original given numbers.)
-
-Using the original provided values:
-```
-Load from going (as given) = 12.5 kN/m
+Total Load = 10 + 12.5 = 22.5 kN/m
 ```
 
-- Total Load:
+**C. Load on  1meter strip**
 ```
-Total Load = 10.5 + 12.5 = 23.0 kN/m
+w = 22.5/ 1.25m = 18 kN/m
 ```
-
-C. Load per Meter Width
-```
-w = 23.0 kN/m ÷ 2.4 m = 9.58 kN/m
-```
-
 ---
-
-### 📐 Step 3: Effective Span for Bending Moment
-A different effective span is used for the bending moment calculation, considering the double flight and support width.
-
-Formula:
-```
-Effective Span = (2 × Clear Width) + Support Width
-```
-
-Calculation (support width taken as 0.1 m):
-```
-Effective Span = (2 × 2.4) + 0.1 = 4.9 m
-```
-
----
-
 ### 💡 Step 4: Calculate Maximum Bending Moment
 For a simply supported beam with uniformly distributed load, the maximum bending moment at midspan is:
 ```
-Mu = w × l² / 8
+Mu = w × leff.² / 8
 ```
 
 Calculation:
 ```
-w = 9.58 kN/m
-l = 4.9 m
-
-Mu = 9.58 × (4.9)² / 8
-   = 9.58 × 24.01 / 8
-   = 229.98 / 8
-Mu = 28.75 kNm
+w = 18 kN/m
+leff. = 2.554 m
 ```
-
+```
+Mu = 18 × (2.554)² / 8
+   = 18 × 6.523 / 8
+Mu = 14.676 kNm
+```
 ---
 
 ### ✅ Final Result
-The design maximum bending moment at midspan of the landing is:
+```
+The design maximum bending moment at midspan of the landing is: 
 
-**Mu = 28.75 kNm**
-
+**Mu = 14.676 kNm**
+```
 <img width="733" height="331" alt="image" src="https://github.com/user-attachments/assets/f2f38b0b-56c3-4e2a-843e-69a7d3429b9a" />
-
-
+---
 **Ques 3.** Design stairs consisting of independent steps project from the face of RCC wall. The stairs will be part of a mall be constructed in Goa.
 
 **Answer 3:** 
