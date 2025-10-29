@@ -1,4 +1,4 @@
-# MSE_CE_GNDEC_2025.github.io
+6# MSE_CE_GNDEC_2025.github.io
 Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) for Civil Engineering. This repo. aims to provide clear, step-by-step solutions to past papers, sample questions, and challenging problems, complete with detailed diagrams and explanations.
 
 | **GURU NANAK DEV ENGINEERING COLLEGE, LUDHIANA** |
@@ -35,7 +35,7 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 | Landing X Dimension                      | 0.45   | m       |
 | Landing Y Dimension                      | 0.60   | m       |
 | Going (G)                                | 2.50   | m       |
-| Clear Width                              | 2.40   | m       |
+| Clear Width of staircase                             | 2.40   | m       |
 | Brick Wall Thickness                     | 250    | mm      |
 
 ---
