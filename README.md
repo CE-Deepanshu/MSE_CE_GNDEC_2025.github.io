@@ -40,16 +40,16 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 
 ---
 
-### 🧮 Step 1: Determine Effective depth (Refer Clause 23.21 (a) for simply supported beam, IS 456 : 2000)
+### Step 1: Determine Effective depth (Refer Clause 23.21 (a) for simply supported beam, IS 456 : 2000)
 Calculation
 ```
 centre to centre distance between landings = X+G+Y = 0.45+2.5+0.6 = 3.55m=3550 mm
 Thickness of slab = 3550/20 = 177.5~180 mm
-Assume dia. of bar 12 mm and clear cover 20 mm (mild exposure condition) = 180-20-12/2 = 154 mm
+Assume dia. of bar 12 mm and clear cover 20 mm (mild exposure condition), the effective depth(d)= 180-20-12/2 = 154 mm
 ```
 ---
 
-### 🧮 Step 2: Determine Effective Span (Refer Clause 22.2 (a), IS 456 : 2000)
+### Step 2: Determine Effective Span (Refer Clause 22.2 (a), IS 456 : 2000)
 The effective span is calculated as the sum of the going and the two landing dimensions.
 
 Formula:
@@ -70,11 +70,11 @@ Effective span of landing slab, Leff. = 2.554 m
 ```
 ---
 
-### 📊 Step 3: Calculate Loads acting on landing (assumed to be uniformly distributed)
+### Step 3: Calculate Loads acting on landing (assumed to be uniformly distributed)
 
 **A. Load Intensity**
 ```
-- Load on Going: Total design load on flight/going x G/2 = 10 x 2.5/2 = 12.5 kN/m
+- Load on Going: Design load on flight/going x G/2 = 10 x 2.5/2 = 12.5 kN/m
 - Load on Landing  = 10 kN/m
 ```
 
@@ -83,12 +83,12 @@ Effective span of landing slab, Leff. = 2.554 m
 Total Load = 10 + 12.5 = 22.5 kN/m
 ```
 
-**C. Load on  1meter strip**
+**C. Load on  1 meter strip**
 ```
-w = 22.5/ 1.25m = 18 kN/m
+w = 22.5/ 1.2m = 18 kN/m
 ```
 ---
-### 💡 Step 4: Calculate Maximum Bending Moment
+### Step 4: Calculate Maximum Bending Moment
 For a simply supported beam with uniformly distributed load, the maximum bending moment at midspan is:
 ```
 Mu = w × leff.² / 8
