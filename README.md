@@ -54,7 +54,7 @@ Clear spans from left to right: 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m. Beam is sub
 
 **Ques 5:** — Design of 2nd span of continuous beam of **question 4**.
 
-**[Answer 5:](index5.md)**
+**[Answer 5:](5index.md)**
 
 ---
 
