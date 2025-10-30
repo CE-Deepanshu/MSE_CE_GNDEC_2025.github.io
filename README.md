@@ -177,7 +177,7 @@ d = 150 - 20 - $$\frac{10}{2}$$ = 125 mm
 
 **Required main steel area (Ast) using the following expression:**
 
-$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{fy·bd²}].bd$
+$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_ck·bd²}].bd$
 
  = $$\frac{0.5·20}{415}·[1 − √\frac{1 − (4.6 · 5.2 x 10^6)}{20·310.125²}].310.125$$
 
@@ -317,7 +317,7 @@ M5 = $$- (\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{9}) × l^2$$  = $$- (\frac{90}{12}
 
 Formula used (as given):
 
-$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_{ck}·bd²}].bd$
+$$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_{ck}·bd²}].bd$$
 
 Using the provided numeric substitution:
 - Mu (given) = 239.1 × 10^6 N·mm  
@@ -326,7 +326,7 @@ Using the provided numeric substitution:
 - b = 300 mm  
 - d = 500 mm
 
-$Ast_{req} = \frac{0.5·35}{415}·[1 − √\frac{1 − (4.6 · 239.1 × 10^6)}{35·300.500²}].300.500$
+$$Ast_{req} = \frac{0.5·35}{415}·[1 − √\frac{1 − (4.6 · 239.1 × 10^6)}{35·300.500²}].300.500$$
 
 $$Ast_{req}$$ = 1613.1 mm²
 
@@ -346,11 +346,11 @@ Using the given values:
 
 Substituting values:
 
-$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_{ck}·bd²}].bd$
+$$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_{ck}·bd²}].bd$$
 
-  $= \frac{0.5·25}{415}·[1 − √\frac{1 − (4.6 · 351.25 × 10^6)}{415·300.500²}].300.500 = 1646.63 mm^2$
+  $$= \frac{0.5·25}{415}·[1 − √\frac{1 − (4.6 · 351.25 × 10^6)}{415·300.500²}].300.500 = 1646.63 mm^2$$
 
-$Ast_{req} at support = 1646.63 mm^2$
+$$Ast_{req} at support = 1646.63 mm^2$$
 
 Provide 25 mm Φ bars:
 - Area of one 25 mm Φ = π × 25² / 4 = 490.87 mm²  
@@ -423,27 +423,27 @@ $$l_y$$ = 5.5 + 0.23 = 5.73m
 Take lower value of the above **$$l_y$$  = 5.662m**
 
 ### 4. Calculation of Moment and steel
-Aspect Ratio = ly/lx = 5.661/4.424 = 1.279
+Aspect Ratio = $$\frac{l_y}{l_x} = \frac{5.661}{4.424}$$ = 1.279
 
 Type of Panel of moment considered - Two adjacent edges discontine
 
 #### 4.1 Negative moment at continuous edge
-$α_x = -0.063$  
-$a_y = -0.037$
+$$α_x = -0.063$$  
+$$a_y = -0.037$$
 
-$M_x = α_x.W.lx^2$
+$$M_x = α_x.W.lx^2$$
 
-$= -0.063 x 12 x 4.424^2$
+$$= -0.063 x 12 x 4.424^2$$
 
-**$M_x = -14.796 kNm$**
+**$$M_x = -14.796 kNm$$**
 
-$M_y = α_y.W.lx^2$
+$$M_y = α_y.W.lx^2$$
 
 = -0.037 x 12 x $$4.424^2$$
 
 **$M_y = -8.689 kNm$**
 
-$$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_{ck}·bd_x²}].bd_x$$
+$$Ast_{x} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_{ck}·bd_x²}].bd_x$$
 
 $$= \frac{0.5·25}{415}·[1 − √\frac{1 − (4.6 ·-14.796 x 10^6)}{415·1000.175²}].1000.175$$
 
@@ -455,7 +455,7 @@ Use 12mm Ø bar
 
 **Provide 12mm ф bar @300mm c/c**  Refer to Clause 26.3.3 (b) (2)
 
-$$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_{ck}·bd_y²}].bd_y$$
+$$Ast_{y} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_{ck}·bd_y²}].bd_y$$
 
 $$= \frac{0.5·25}{415}·[1 − √\frac{1 − (4.6 ·-8.689 x 10^6)}{415·1000.175²}].1000.175$$
 
@@ -468,20 +468,20 @@ Use 12 mm ф bar
 **Provide 12 mm ф @ 300 mm c/c**  Refer to Clause 26.3.3 (b) (2)
 
 #### 4.2 Positive moment at midspan
-$α_x = 0.048$  
-$a_y = 0.035$
+$$α_x = 0.048$$  
+$$a_y = 0.035$$
 
-$M_x = α_x.W.lx^2$
+$$M_x = α_x.W.lx^2$$
 
-$= -0.048 x 12 x 4.424^2$
+$$= -0.048 x 12 x 4.424^2$$
 
-**$M_x = 11.273 kNm$**
+**$$M_x = 11.273 kNm$$**
 
-$M_y = α_y.W.lx^2$
+$$M_y = α_y.W.lx^2$$
 
-$= 0.035 x 12 x 4.424^2$
+$$= 0.035 x 12 x 4.424^2$$
 
-**$M_y = 8.22 kNm$**
+**$$M_y = 8.22 kNm$$**
 
 $$Ast_{x} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_{ck}.bd_x²}].bd_x$$
 
