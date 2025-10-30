@@ -311,11 +311,17 @@ SF4 = ((0.5 × 90) + (0.6 × 45)) × 5.3 = 381.6 kN
 
 #### 4. Bending Moments
 
-**1.** Span moments (example: near middle of end span)
 ```
+Formula used
+Mu = (Wu,DL + Wu,LL) × l² 
+```
+**1.** Span moments 
+
+**1.1** Near middle of end span
+
 (Moment formula as used)
-Mu = (Wu,DL + Wu,LL) × l²  = (90 + 45) × 4.8²  = 276.48 kNm
-```
+Mu = (Co_eff.Wu,DL + Co_eff.Wu,LL) × l²  = (90 + 45) × 4.8²  = 276.48 kNm
+
 ##### Effective span and Support Moments
 
 - Effective span
