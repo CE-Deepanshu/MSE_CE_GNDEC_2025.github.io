@@ -1,4 +1,7 @@
-### Answer 4
+## Answer 4
+
+---
+
 ### Given data
 
 - Clear spans (left → right): 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m  
