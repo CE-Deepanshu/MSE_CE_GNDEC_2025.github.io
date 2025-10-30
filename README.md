@@ -1,4 +1,5 @@
-6# MSE_CE_GNDEC_2025.github.io
+# MSE_CE_GNDEC_2025.github.io
+
 Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) for Civil Engineering. This repo. aims to provide clear, step-by-step solutions to past papers, sample questions, and challenging problems, complete with detailed diagrams and explanations.
 
 | **GURU NANAK DEV ENGINEERING COLLEGE, LUDHIANA** |
@@ -85,7 +86,7 @@ Total Load = 10 + 12.5 = 22.5 kN/m
 
 **C. Load on  1 meter strip**
 ```
-w = 22.5/ 1.2m = 18 kN/m
+w = 22.5/ 1.2m = 18.75 kN/m
 ```
 ---
 ### Step 4: Calculate Maximum Bending Moment
@@ -96,13 +97,13 @@ Mu = w × leff.² / 8
 
 Calculation:
 ```
-w = 18 kN/m
+w = 18.75 kN/m
 leff. = 2.554 m
 ```
 ```
-Mu = 18 × (2.554)² / 8
-   = 18 × 6.523 / 8
-Mu = 14.676 kNm
+Mu = 18.75 × (2.554)² / 8
+   = 18.75 × 6.523 / 8
+Mu = 15.288 ~ 15.3 kNm
 ```
 ---
 
@@ -110,10 +111,11 @@ Mu = 14.676 kNm
 ```
 The design maximum bending moment at midspan of the landing is: 
 
-**Mu = 14.676 kNm**
+Mu = 15.3 kNm
 ```
 <img width="733" height="331" alt="image" src="https://github.com/user-attachments/assets/f2f38b0b-56c3-4e2a-843e-69a7d3429b9a" />
 ---
+
 **Ques 3.** Design stairs consisting of independent steps project from the face of RCC wall. The stairs will be part of a mall be constructed in Goa.
 
 **Answer 3:** 
@@ -125,8 +127,6 @@ The design maximum bending moment at midspan of the landing is:
 - Grade of concrete = M20, fck = 20 N/mm²  
 - Grade of steel = Fe 415, fy = 415 N/mm²
 
----
-
 ### Solution
 
 - It is desirable to make the actual width of the tread slab, B, about 10 mm more than the effective tread, so that there is a marginal overlap between adjacent tread slabs.  
@@ -135,11 +135,9 @@ The design maximum bending moment at midspan of the landing is:
 - Assume a slab thickness at the fixed support, t = 150 mm.  
   - The slab thickness may be kept constant for a distance of, say, 300 mm from the support and tapered to a minimum thickness of 80 mm (as shown in the referenced figure).
 
----
+#### 1. Design loads
 
-### 1. Design loads
-
-#### 1.1 Dead loads
+##### 1.1 Dead loads
 (i) Self weight of tread slab:
 ```
 25 × (0.15 × 0.31) = 1.162 kN/m
@@ -153,12 +151,11 @@ Total dead load:
 DL_total = 1.162 + 0.186 = 1.348 kN/m
 ```
 
-Page 3:
 ```
 Wu, DL = 1.348 × 1.5 = 2.022 kN/m
 ```
 
-#### 1.2 Live load
+##### 1.2 Live load
 (i) Alternative I:
 ```
 Wu, LL = 5.0 × 0.3 × 1.5 = 2.250 kN/m
@@ -169,9 +166,7 @@ Wu, LL = 5.0 × 0.3 × 1.5 = 2.250 kN/m
 Wu, LL = 1.3 × 1.5 = 1.95 kN  (at free end)
 ```
 
----
-
-### 2. Design Moments
+#### 2. Design Moments
 
 - Moment at fixed end due to dead load:
 ```
@@ -189,9 +184,7 @@ Mu, LL (Alt II) = 1.95 × 1.5 = 2.93 kNm  (more critical)
 Mu = Mu, DL + Mu, LL = 2.27 + 2.93 = 5.20 kNm
 ```
 
----
-
-### 3. Design of Main Bars
+#### 3. Design of Main Bars
 
 - Assume clear cover = 20 mm (mild exposure) and bar diameter = 10 mm.  
 - Effective depth:
@@ -218,9 +211,7 @@ Area of one 10Φ = π/4 × 10² = 78.54 mm²
 Ast provided = 3 × 78.54 = 235.62 mm²  (> 124 mm²)
 ```
 
----
-
-### 4. Design of Distribution Bars
+#### 4. Design of Distribution Bars
 
 - Minimum steel for distribution:
 ```
@@ -243,13 +234,13 @@ Spacing = (Area of one bar × 1000) / required_area_per_meter
 8 mm Φ @ 270 mm c/c
 ```
 
----
-
-### 5. Summary / Provided reinforcement
+#### 5. Summary / Provided reinforcement
 - Main reinforcement: 3 nos. 10 mm Ø bars (Ast provided = 235.6 mm²)  
 - Distribution bars: 8 mm Ø @ 270 mm c/c
 
 <img width="1536" height="1024" alt="tread stairs" src="https://github.com/user-attachments/assets/37047e88-620b-4337-a31c-a98487cbf51c" />
+
+---
 
 **Ques 4:** Find design shear forces and bending moments(as per IS 456) at critical sections of a five-span continuous reinforced beam supported on masonry supports of 300 mm each.  
 Clear spans from left to right: 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m.  
@@ -257,8 +248,6 @@ Beam loading: dead load (including self weight) = 60 kN/m and imposed (live) loa
 
 <img width="810" height="252" alt="image" src="https://github.com/user-attachments/assets/525c9de1-a2b2-4470-88d0-5b593c2c9492" />
 
-
----
 **Answer 4:**
 ### Given data
 
@@ -271,7 +260,7 @@ Beam loading: dead load (including self weight) = 60 kN/m and imposed (live) loa
 
 ### Solution
 
-### 1. Design (factored) uniformly distributed loads (using 1.5 load factor)
+#### 1. Design (factored) uniformly distributed loads (using 1.5 load factor)
 
 ```
 Wu,DL = 60 × 1.5 = 90 kN/m
@@ -282,7 +271,7 @@ Total factored UDL (where needed) = 90 + 45 = 135 kN/m
 
 ---
 
-### 2. Effective spans (clear span + support width)
+#### 2. Effective spans (clear span + support width)
 
 (Use support width = 0.30 m added to the clear span at the relevant span)
 
@@ -294,40 +283,40 @@ For 5.0 m span: 5.0 + 0.3 = 5.3 m
 
 ---
 
-### 3. Shear Forces
+#### 3. Shear Forces
 
-1. At end supports (SF1)
+**1.** At end supports (SF1)
 ```
 SF1 = ((0.4 × 90) + (0.45 × 45)) × 4.8 = 270 kN
 ```
 
-2. At supports next to the end supports
+**2.** At supports next to the end supports
 
-2.1 Outer side (SF2)
+**2.1** Outer side (SF2)
 ```
 SF2 = ((0.5 × 90) + (0.6 × 45)) × 4.8 = 388.8 kN
 ```
 
-2.2 Inner side (SF3)
+**2.2** Inner side (SF3)
 ```
 SF3 = ((0.55 × 90) + (0.6 × 45)) × 5.05 = 386.325 kN
 ```
 
-3. At all other interior supports (SF4)
+**3.** At all other interior supports (SF4)
 ```
 SF4 = ((0.5 × 90) + (0.6 × 45)) × 5.3 = 381.6 kN
 ```
 
 ---
 
-### 4. Bending Moments
+#### 4. Bending Moments
 
-1. Span moments (example: near middle of end span)
+**1.** Span moments (example: near middle of end span)
 ```
 (Moment formula as used)
 Mu = (Wu,DL + Wu,LL) × l²  = (90 + 45) × 4.8²  = 276.48 kNm
 ```
-### Effective span and Support Moments
+##### Effective span and Support Moments
 
 - Effective span
 - Support Moments
