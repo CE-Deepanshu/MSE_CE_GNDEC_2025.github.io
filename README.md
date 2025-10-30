@@ -133,101 +133,78 @@ Mu = 15.3 kNm
 #### 1. Design loads
 
 ##### 1.1 Dead loads
-(i) Self weight of tread slab:
-```
-25 × (0.15 × 0.31) = 1.162 kN/m
-```
-Finishes:
-```
-0.6 × 0.31 = 0.186 kN/m
-```
-Total dead load:
-```
-DL_total = 1.162 + 0.186 = 1.348 kN/m
-```
+(1) Self weight of tread slab = 25 × (0.15 × 0.31) = 1.162 kN/m
 
-```
-Wu, DL = 1.348 × 1.5 = 2.022 kN/m
-```
+(2) Finishes = 0.6 × 0.31 = 0.186 kN/m
+
+Total dead load, DL = 1.162 + 0.186 = 1.348 kN/m
+
+$$Wu_{DL}$$ = 1.348 × 1.5 = 2.022 kN/m
+
 
 ##### 1.2 Live load
 (i) Alternative I:
-```
-Wu, LL = 5.0 × 0.3 × 1.5 = 2.250 kN/m
-```
+
+$$Wu_{LL}$$ = 5.0 × 0.3 × 1.5 = 2.250 kN/m
 
 (ii) Alternative II:
-```
-Wu, LL = 1.3 × 1.5 = 1.95 kN  (at free end)
-```
+
+$$Wu_{LL}$$ = 1.3 × 1.5 = 1.95 kN/m (at free end)
 
 #### 2. Design Moments
 
 - Moment at fixed end due to dead load:
-```
-Mu, DL = (2.022 × 1.5²) / 2 = 2.27 kNm
-```
+
+$$Mu_{DL} = \frac{(2.022 × 1.5²)}{2}$$ = 2.27 kNm
 
 - Moments due to live load (considering alternatives):
-```
-Mu, LL (Alt I) = (2.25 × 1.5²) / 2 = 2.53 kNm
-Mu, LL (Alt II) = 1.95 × 1.5 = 2.93 kNm  (more critical)
-```
 
-- Total design bending moment at fixed end:
-```
-Mu = Mu, DL + Mu, LL = 2.27 + 2.93 = 5.20 kNm
-```
+$$Mu_{LL} (Alt I) = \frac{(2.25 × 1.5²)}{2}$$ = 2.53 kNm
+
+$$Mu_{LL}$$ (Alt II) = 1.95 × 1.5 = 2.93 kNm  (more critical)
+  
+-Total design bending moment at fixed end:
+
+Mu = $$Mu_{DL} + Mu_{LL}$$ = 2.27 + 2.93 = 5.20 kNm
+
 
 #### 3. Design of Main Bars
 
-- Assume clear cover = 20 mm (mild exposure) and bar diameter = 10 mm.  
+- Assume clear cover = 20 mm **(mild exposure)** and bar diameter = 10 mm.  
 - Effective depth:
-```
-d = 150 - 20 - (10 / 2) = 125 mm
-```
 
-- Required steel area (Ast) using the provided expression:
-```
-Ast = 0.5 × bd × [1 - √(1 - (4.6 × M) / (fy × bd² / fck))]
-```
-(Using the values as arranged in the original text:)
-```
-Ast = 0.5 × 20 [1 - √(1 - (4.6 × 5.20 × 10⁶) / (415 × 20 × 310 × 125²))]
-```
-(Evaluated in the provided work:)
-```
-Ast = 123.37 mm²  (rounded: > 124 mm²)
-```
+d = 150 - 20 - $$\frac{10}{2}$$ = 125 mm
 
-- Provide main bars: 10 mm dia.
-```
-Area of one 10Φ = π/4 × 10² = 78.54 mm²
-Ast provided = 3 × 78.54 = 235.62 mm²  (> 124 mm²)
-```
+- Required steel area (Ast) using the following expression:
+
+$$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{fy·bd²}].bd$$
+
+ = \frac{0.5·20}{415}·[1 − √\frac{1 − (4.6 · 5.2 x 10^6)}{20·310.125²}].310.125$$
+
+$$Ast_{req}$$= 123.37 mm² ~ 124 mm²
+
+- Provide main bars of 10 mm dia.
+- 
+Area of one 10Φ = $$\frac{π}{4}$$ × 10² = 78.54 mm²
+
+No. of bars = $$\frac{Ast_{req}}{Area of one 10Φ} = \frac{124}{78.54}$$ = 3 No.
+
+$$A_{st provided}$$ = 3 × 78.54 = 235.62 mm²  ~ 124 mm²
 
 #### 4. Design of Distribution Bars
 
 - Minimum steel for distribution:
-```
-Ast,min = 0.12% × b × d = 0.12% × 310 × 125 = 180 mm²
-```
 
-- Area of 8 mm bar:
-```
+$$A_{st,min}$$ = 0.12% × b × d = 0.12% × 310 × 125 = 180 mm²
+
+- Provide 8 mm bar:
+
 Area of one 8Φ = π/4 × 8² = 50.27 mm²  (approx)
-```
 
-- Spacing to provide required area:
-```
-Spacing = (Area of one bar × 1000) / required_area_per_meter
-         = (50.27 × 1000) / 180 ≈ 279 mm
-```
+**Spacing** = \frac{Area of one 8Φ}{A_{st,min}} x 1000
+            = \frac{50.27 mm²}{180} x 1000  = 278.88 mm
 
-- Provide distribution bars:
-```
-8 mm Φ @ 270 mm c/c
-```
+**Provide distribution bars 8 mm Φ @ 270 mm c/c**
 
 #### 5. Summary / Provided reinforcement
 - Main reinforcement: 3 nos. 10 mm Ø bars (Ast provided = 235.6 mm²)  
