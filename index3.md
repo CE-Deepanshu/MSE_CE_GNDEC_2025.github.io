@@ -1,5 +1,7 @@
 ## Answer 3
 
+---
+
 ### Assumptions
 - Width of flight = 1.5 m  
 - Riser = 150 mm  
