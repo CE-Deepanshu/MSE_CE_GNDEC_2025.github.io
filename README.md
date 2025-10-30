@@ -48,7 +48,7 @@ Clear spans from left to right: 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m. Beam is sub
 
 <img width="810" height="252" alt="image" src="https://github.com/user-attachments/assets/525c9de1-a2b2-4470-88d0-5b593c2c9492" />
 
-**[Answer 4:](index4.md)**
+**[Answer 4:](4index.md)**
 
 ---
 
