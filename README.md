@@ -60,6 +60,6 @@ Clear spans from left to right: 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m. Beam is sub
 
 **Ques 6:** Design slab of the corner bed room at second floor, which is part of 5 storeyed apartment to be constructed at Ludhiana. The inside size of room is 4.25m x 5.50m.
 
-**[Answer 6:](index6.md)** 
+**[Answer 6:](6index.md)** 
 
 
