@@ -39,7 +39,7 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 
 **Ques 3.** Design stairs consisting of independent steps project from the face of RCC wall. The stairs will be part of a mall be constructed in Goa.
 
-**[Answer 3:](index3.md)** 
+**[Answer 3:](3index.md)** 
 
 ---
 
