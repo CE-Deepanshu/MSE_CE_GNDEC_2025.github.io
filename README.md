@@ -20,7 +20,7 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 
 **Quest 1:** What clear cover be provided for a beam which is part of a bridge deck to be constructed over the Arabian Sea, along the western cost of Mumbai.
 
-**Answer 1:** Provide 50mm clear cover considering very severe condition - concrete exposed to coastal environment Acc. to table no. 16, IS 456 : 2000
+**Answer 1:** 
 
 ---
 
