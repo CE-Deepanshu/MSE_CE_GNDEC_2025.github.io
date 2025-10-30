@@ -43,8 +43,7 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 
 ---
 
-**Ques 4:** Find design shear forces and bending moments(as per IS 456) at critical sections of a five-span continuous reinforced beam supported on masonry supports of 300 mm each.  
-Clear spans from left to right: 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m. Beam is subjected to dead load (including self weight) of 60 kN/m and imposed (live) load of 30 kN/m at service level.
+**Ques 4:** Find design shear forces and bending moments(as per IS 456) at critical sections of a five-span continuous reinforced beam supported on masonry supports of 300 mm each. Clear spans from left to right: 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m. Beam is subjected to dead load (including self weight) of 60 kN/m and imposed (live) load of 30 kN/m at service level.
 
 <img width="810" height="252" alt="image" src="https://github.com/user-attachments/assets/525c9de1-a2b2-4470-88d0-5b593c2c9492" />
 
