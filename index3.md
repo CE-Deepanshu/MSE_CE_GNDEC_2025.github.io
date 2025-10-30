@@ -1,4 +1,4 @@
-### Answer 3
+## Answer 3
 
 ### Assumptions
 - Width of flight = 1.5 m  
