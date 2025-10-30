@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Converted from Markdown</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+    h1, h2, h3 { color: #333; margin-top: 1.5em; margin-bottom: 0.5em; }
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.2em; }
+    code {
+      background: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-family: 'Courier New', monospace;
+      line-height: 1.4;
+    }
+    blockquote {
+      border-left: 4px solid #ddd;
+      margin: 1em 0;
+      padding-left: 20px;
+      color: #666;
+      font-style: italic;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1em 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f5f5f5;
+      font-weight: bold;
+    }
+    ul, ol {
+      margin: 1em 0;
+      padding-left: 2em;
+    }
+    li {
+      margin: 0.5em 0;
+    }
+  </style>
+</head>
+<body>
+<h2>Answer 3</h2>
+<hr>
+<h3>Assumptions</h3>
+<ul>
+<li>Width of flight = 1.5 m  </li>
+<li>Riser = 150 mm  </li>
+<li>Tread = 300 mm  </li>
+<li>Grade of concrete = M20, fck = 20 N/mm²  </li>
+<li>Grade of steel = Fe 415, fy = 415 N/mm²</li>
+</ul>
+<h3>Solution</h3>
+<ul>
+<li><p>It is desirable to make the actual width of the tread slab, B, about 10 mm more than the effective tread, so that there is a marginal overlap between adjacent tread slabs.  </p>
+<ul>
+<li>B = 310 mm</li>
+</ul>
+</li>
+<li><p>Assume a slab thickness at the fixed support, t = 150 mm.  </p>
+<ul>
+<li>The slab thickness may be kept constant for a distance of, say, 300 mm from the support and tapered to a minimum thickness of 80 mm (as shown in the referenced figure).</li>
+</ul>
+</li>
+</ul>
+<h4>1. Design loads</h4>
+<h5>1.1 Dead loads</h5>
+<p>(1) Self weight of tread slab = 25 × (0.15 × 0.31) = 1.162 kN/m</p>
+<p>(2) Finishes = 0.6 × 0.31 = 0.186 kN/m</p>
+<p>Total dead load, DL = 1.162 + 0.186 = 1.348 kN/m</p>
+<p>$$Wu_{DL}$$ = 1.348 × 1.5 = 2.022 kN/m</p>
+<h5>1.2 Live load</h5>
+<p>(i) Alternative I:</p>
+<p>$$Wu_{LL}$$ = 5.0 × 0.3 × 1.5 = 2.250 kN/m</p>
+<p>(ii) Alternative II:</p>
+<p>$$Wu_{LL}$$ = 1.3 × 1.5 = 1.95 kN/m (at free end)</p>
+<h4>2. Design Moments</h4>
+<ul>
+<li>Moment at fixed end due to dead load:</li>
+</ul>
+<p>$Mu_{DL} = \frac{(2.022 × 1.5²)}{2}$ = 2.27 kNm</p>
+<ul>
+<li>Moments due to live load (considering alternatives):</li>
+</ul>
+<p>$$Mu_{LL} (Alt I) = \frac{(2.25 × 1.5²)}{2}$$ = 2.53 kNm</p>
+<p>$$Mu_{LL}$$ (Alt II) = 1.95 × 1.5 = 2.93 kNm  (more critical)</p>
+<p>-Total design bending moment at fixed end:</p>
+<p>Mu = $$Mu_{DL} + Mu_{LL}$$ = 2.27 + 2.93 = 5.20 kNm</p>
+<h4>3. Design of Main Bars</h4>
+<p>Assume clear cover = 20 mm <strong>(mild exposure)</strong> and bar diameter = 10 mm.<br><strong>Effective depth:</strong></p>
+<p>d = 150 - 20 - $$\frac{10}{2}$$ = 125 mm</p>
+<p><strong>Required main steel area (Ast) using the following expression:</strong></p>
+<p>$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_ck·bd²}].bd$</p>
+<p> = $$\frac{0.5·20}{415}·[1 − √\frac{1 − (4.6 · 5.2 x 10^6)}{20·310.125²}].310.125$$</p>
+<p>$$Ast_{req}$$= 123.37 mm² ~ 124 mm²</p>
+<p>Provide main bars of 10 mm dia.</p>
+<p>Area of one 10Φ = $$\frac{π}{4}$$ × 10² = 78.54 mm²</p>
+<p>No. of bars = $$\frac{Ast_{req}}{Area of one 10Φ} = \frac{124}{78.54}$$ = 3 No.</p>
+<p>$$A_{st provided}$$ = 3 × 78.54 = 235.62 mm²  ~ 124 mm²</p>
+<h4>4. Design of Distribution Bars</h4>
+<p><strong>Minimum steel for distribution bars:</strong></p>
+<p>$$A_{st,min}$$ = 0.12% × b × d = 0.12% × 310 × 125 = 180 mm²</p>
+<p>Provide 8 mm bar:</p>
+<p>Area of one 8Φ = π/4 × 8² = 50.27 mm²  (approx)</p>
+<p><strong>Spacing</strong> = $$\frac{Area of one 8Φ}{A_{st,min}}$$ x 1000
+            = $$\frac{50.27 mm²}{180}$$ x 1000  = 278.88 mm</p>
+<p><strong>Provide distribution bars 8 mm Φ @ 270 mm c/c</strong></p>
+<h4>5. Summary / Provided reinforcement</h4>
+<p><strong>Main reinforcement: 3 nos. 10 mm Ø bars (Ast provided = 235.6 mm²)</strong></p>
+<p><strong>Distribution bars: 8 mm Ø @ 270 mm c/c</strong></p>
+<img width="1242" height="396" alt="image" src="https://github.com/user-attachments/assets/b23de724-5717-4adc-a532-906ba0718b40" />
+
+</body>
+</html>
