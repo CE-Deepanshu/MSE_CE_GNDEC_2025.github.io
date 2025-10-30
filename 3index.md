@@ -41,9 +41,9 @@ $$Wu_{LL}$$ = 1.3 × 1.5 = 1.95 kN/m (at free end)
 #### 2. Design Moments
 
 - Moment at fixed end due to dead load:
-
+```
 $Mu_{DL} = \frac{(2.022 × 1.5²)}{2}$ = 2.27 kNm
-
+```
 - Moments due to live load (considering alternatives):
 
 $$Mu_{LL} (Alt I) = \frac{(2.25 × 1.5²)}{2}$$ = 2.53 kNm
