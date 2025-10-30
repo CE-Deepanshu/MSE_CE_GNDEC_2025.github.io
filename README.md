@@ -22,6 +22,8 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 
 **Answer 1:** Provide 50mm clear cover considering very severe condition - concrete exposed to coastal environment Acc. to table no. 16, IS 456 : 2000
 
+---
+
 **Ques 2:** Analysis for the maximum BM to be considered for the design of the landing slab of a staircase shown in the figure, taking total design lead on landing and flight as 10 KN/m², X = 0.45m, Y = 0.6m & G=2.5m. Clear width of staircase is 2.4m and brick walls supporting Staircase have thickness of 250mm.
 
 <img width="542" height="342" alt="image" src="https://github.com/user-attachments/assets/39c84742-f954-45bf-9633-cac11d9f32a7" />
@@ -39,18 +41,14 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 | Clear Width of staircase                             | 2.40   | m       |
 | Brick Wall Thickness                     | 250    | mm      |
 
----
-
-### Step 1: Determine Effective depth (Refer Clause 23.21 (a) for simply supported beam, IS 456 : 2000)
+#### Step 1: Determine Effective depth (Refer Clause 23.21 (a) for simply supported beam, IS 456 : 2000)
 Calculation
 ```
 centre to centre distance between landings = X+G+Y = 0.45+2.5+0.6 = 3.55m=3550 mm
 Thickness of slab = 3550/20 = 177.5~180 mm
 Assume dia. of bar 12 mm and clear cover 20 mm (mild exposure condition), the effective depth(d)= 180-20-12/2 = 154 mm
 ```
----
-
-### Step 2: Determine Effective Span (Refer Clause 22.2 (a), IS 456 : 2000)
+#### Step 2: Determine Effective Span (Refer Clause 22.2 (a), IS 456 : 2000)
 The effective span is calculated as the sum of the going and the two landing dimensions.
 
 Formula:
@@ -64,14 +62,12 @@ Calculation:
 1. Leff. = 2.4 + 0.154 = 2.554m
 2. Leff. = 2.4 + 0.25/2 + 0.25/2 = 2.65 m
 ```
-#### ✅ Effective span
+##### ✅ Effective span
 ```
 Consider effective span which is lesser in the above value
 Effective span of landing slab, Leff. = 2.554 m
 ```
----
-
-### Step 3: Calculate Loads acting on landing (assumed to be uniformly distributed)
+#### Step 3: Calculate Loads acting on landing (assumed to be uniformly distributed)
 
 **A. Load Intensity**
 ```
@@ -88,7 +84,6 @@ Total Load = 10 + 12.5 = 22.5 kN/m
 ```
 w = 22.5/ 1.2m = 18.75 kN/m
 ```
----
 ### Step 4: Calculate Maximum Bending Moment
 For a simply supported beam with uniformly distributed load, the maximum bending moment at midspan is:
 ```
@@ -243,8 +238,7 @@ Spacing = (Area of one bar × 1000) / required_area_per_meter
 ---
 
 **Ques 4:** Find design shear forces and bending moments(as per IS 456) at critical sections of a five-span continuous reinforced beam supported on masonry supports of 300 mm each.  
-Clear spans from left to right: 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m.  
-Beam loading: dead load (including self weight) = 60 kN/m and imposed (live) load at service level = 30 kN/m.
+Clear spans from left to right: 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m. Beam is subjected to dead load (including self weight) of 60 kN/m and imposed (live) load of 30 kN/m at service level.
 
 <img width="810" height="252" alt="image" src="https://github.com/user-attachments/assets/525c9de1-a2b2-4470-88d0-5b593c2c9492" />
 
@@ -255,8 +249,6 @@ Beam loading: dead load (including self weight) = 60 kN/m and imposed (live) loa
 - Support width (masonry): 300 mm = 0.30 m  
 - Dead load (service): 60 kN/m (incl. self weight)  
 - Imposed (live) load (service): 30 kN/m
-
----
 
 ### Solution
 
@@ -269,11 +261,9 @@ Wu,LL = 30 × 1.5 = 45 kN/m
 
 Total factored UDL (where needed) = 90 + 45 = 135 kN/m
 
----
-
 #### 2. Effective spans (clear span + support width)
 
-(Use support width = 0.30 m added to the clear span at the relevant span)
+(Use support width = 0.30 m added to the clear span at the relevant span as we don't know about effective depth)
 
 ```
 For 4.5 m span: 4.5 + 0.3 = 4.8 m
@@ -281,9 +271,12 @@ For 4.75 m span: 4.75 + 0.3 = 5.05 m
 For 5.0 m span: 5.0 + 0.3 = 5.3 m
 ```
 
----
-
 #### 3. Shear Forces
+**Use Formula**
+
+SF = (Co_eff.Wu,DL + Co_eff.Wu,LL) × l² 
+
+For Example : ((0.4 × Wu_DL) + (0.45 × Wu_LL)) × 4.8
 
 **1.** At end supports (SF1)
 ```
