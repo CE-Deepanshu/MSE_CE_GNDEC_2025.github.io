@@ -254,10 +254,10 @@ Clear spans from left to right: 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m. Beam is sub
 
 #### 1. Design (factored) uniformly distributed loads (using 1.5 load factor)
 
-```
-Wu,DL = 60 × 1.5 = 90 kN/m
-Wu,LL = 30 × 1.5 = 45 kN/m
-```
+$$Wu_{DL}$$ = 60 × 1.5 = 90 kN/m
+
+$$Wu_{LL}$$ = 30 × 1.5 = 45 kN/m
+
 
 Total factored UDL (where needed) = 90 + 45 = 135 kN/m
 
@@ -265,68 +265,63 @@ Total factored UDL (where needed) = 90 + 45 = 135 kN/m
 
 (Use support width = 0.30 m added to the clear span at the relevant span as we don't know about effective depth)
 
-```
 For 4.5 m span: 4.5 + 0.3 = 4.8 m
 For 4.75 m span: 4.75 + 0.3 = 5.05 m
 For 5.0 m span: 5.0 + 0.3 = 5.3 m
-```
 
 #### 3. Shear Forces
 **Use Formula**
 
-SF = (Co_eff.Wu,DL + Co_eff.Wu,LL) × l² 
+SF = $$(Coeff.Wu_{DL} + Coeff.Wu_{LL}) x l^2$$
 
 For Example : ((0.4 × Wu_DL) + (0.45 × Wu_LL)) × 4.8
 
-**1.** At end supports (SF1)
-```
+**1. At end supports (SF1)**
+
 SF1 = ((0.4 × 90) + (0.45 × 45)) × 4.8 = 270 kN
-```
 
-**2.** At supports next to the end supports
+**2. At supports next to the end supports**
 
-**2.1** Outer side (SF2)
-```
+**2.1 Outer side (SF2)**
+
 SF2 = ((0.5 × 90) + (0.6 × 45)) × 4.8 = 388.8 kN
-```
 
-**2.2** Inner side (SF3)
-```
+**2.2 Inner side (SF3)**
+
 SF3 = ((0.55 × 90) + (0.6 × 45)) × 5.05 = 386.325 kN
-```
 
-**3.** At all other interior supports (SF4)
-```
+**3. At all other interior supports (SF4)**
+
 SF4 = ((0.5 × 90) + (0.6 × 45)) × 5.3 = 381.6 kN
-```
-
----
 
 #### 4. Bending Moments
+**Formula used**
 
-```
-Formula used
-Mu = (Wu,DL + Wu,LL) × l² 
-```
-**1.** Span moments 
+Mu = $$(Coeff.Wu_{DL} + Wu_{LL}) × l^2$$ 
 
-**1.1** Near middle of end span
+##### **1. Span moments** 
 
-(Moment formula as used)
-Mu = (Co_eff.Wu,DL + Co_eff.Wu,LL) × l²  = (90 + 45) × 4.8²  = 276.48 kNm
+**1.1 Near middle of end span**
 
-##### Effective span and Support Moments
+M1 = $$(\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{10}) × l^2$$  = $$(\frac{90}{12} + \frac{45}{10}) × 4.8^2$$ = 276.48 kNm
 
-- Effective span
-- Support Moments
-- 2 Support Moments
-- At support next to Open
-- At other Interior support
+**1.2 At middle of interior span**
 
-#### M5
+M2 = $$(\frac{Wu_{DL}}{16} + \frac{Wu_{LL}}{12}) × l^2$$  = $$(\frac{90}{16} + \frac{45}{12}) × 5.05^2$$ = 239.1 kNm
 
-- 4.8 — 322.5 Nm
-- 5.5² — 551105 kN·m
+M3 = $$(\frac{Wu_{DL}}{16} + \frac{Wu_{LL}}{12}) × l^2$$  = $$(\frac{90}{16} + \frac{45}{12}) × 5.3^2$$ = 263.34 kNm
+
+##### **1. Span moments** 
+
+**At support next to the end supports**
+
+M4 = $$- (\frac{Wu_{DL}}{10} + \frac{Wu_{LL}}{9}) × l^2$$  = $$- (\frac{90}{10} + \frac{45}{9}) × 4.8^2$$ = -322.56 kNm
+
+**At support next to the end supports**
+
+M5 = $$- (\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{9}) × l^2$$  = $$- (\frac{90}{12} + \frac{45}{9}) × 5.3^2$$ = -351.125 kNm
+
+---
 
 **Ques 5:** — Design of 2nd span of continuous beam of question 4.
 
@@ -338,16 +333,13 @@ Mu = (Co_eff.Wu,DL + Co_eff.Wu,LL) × l²  = (90 + 45) × 4.8²  = 276.48 kNm
 - Provided bar considered: 25 mm Ø (area of one 25 mm bar = 490.87 mm²)  
 - Material properties and moments are used as given in the problem statements below.
 
----
-
 ### Solution
 
-### 1. Calculation of steel required (mid-span / as given)
+#### **1. Calculation of steel required (mid-span / as given)**
 
 Formula used (as given):
-```
-Ast,req = 0.5 · bd · [1 − √(1 − (4.6 · Mu) / (fy · bd² / fck))]
-```
+
+Ast,req = $$\frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{fy·bd²}].bd$$
 
 Using the provided numeric substitution:
 - Mu (given) = 239.1 × 10^6 N·mm  
