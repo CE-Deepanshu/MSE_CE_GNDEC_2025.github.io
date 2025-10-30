@@ -170,21 +170,21 @@ Mu = $$Mu_{DL} + Mu_{LL}$$ = 2.27 + 2.93 = 5.20 kNm
 
 #### 3. Design of Main Bars
 
-- Assume clear cover = 20 mm **(mild exposure)** and bar diameter = 10 mm.  
-- Effective depth:
+Assume clear cover = 20 mm **(mild exposure)** and bar diameter = 10 mm.  
+**Effective depth:**
 
 d = 150 - 20 - $$\frac{10}{2}$$ = 125 mm
 
-- Required steel area (Ast) using the following expression:
+**Required main steel area (Ast) using the following expression:**
 
-$$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{fy·bd²}].bd$$
+$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{fy·bd²}].bd$
 
- = \frac{0.5·20}{415}·[1 − √\frac{1 − (4.6 · 5.2 x 10^6)}{20·310.125²}].310.125$$
+ = $$\frac{0.5·20}{415}·[1 − √\frac{1 − (4.6 · 5.2 x 10^6)}{20·310.125²}].310.125$$
 
 $$Ast_{req}$$= 123.37 mm² ~ 124 mm²
 
-- Provide main bars of 10 mm dia.
-- 
+Provide main bars of 10 mm dia.
+
 Area of one 10Φ = $$\frac{π}{4}$$ × 10² = 78.54 mm²
 
 No. of bars = $$\frac{Ast_{req}}{Area of one 10Φ} = \frac{124}{78.54}$$ = 3 No.
@@ -193,24 +193,25 @@ $$A_{st provided}$$ = 3 × 78.54 = 235.62 mm²  ~ 124 mm²
 
 #### 4. Design of Distribution Bars
 
-- Minimum steel for distribution:
+**Minimum steel for distribution bars:**
 
 $$A_{st,min}$$ = 0.12% × b × d = 0.12% × 310 × 125 = 180 mm²
 
-- Provide 8 mm bar:
+Provide 8 mm bar:
 
 Area of one 8Φ = π/4 × 8² = 50.27 mm²  (approx)
 
-**Spacing** = \frac{Area of one 8Φ}{A_{st,min}} x 1000
-            = \frac{50.27 mm²}{180} x 1000  = 278.88 mm
+**Spacing** = $$\frac{Area of one 8Φ}{A_{st,min}}$$ x 1000
+            = $$\frac{50.27 mm²}{180}$$ x 1000  = 278.88 mm
 
 **Provide distribution bars 8 mm Φ @ 270 mm c/c**
 
 #### 5. Summary / Provided reinforcement
-- Main reinforcement: 3 nos. 10 mm Ø bars (Ast provided = 235.6 mm²)  
-- Distribution bars: 8 mm Ø @ 270 mm c/c
+**Main reinforcement: 3 nos. 10 mm Ø bars (Ast provided = 235.6 mm²)**
 
-<img width="1536" height="1024" alt="tread stairs" src="https://github.com/user-attachments/assets/37047e88-620b-4337-a31c-a98487cbf51c" />
+**Distribution bars: 8 mm Ø @ 270 mm c/c**
+
+<img width="1242" height="396" alt="image" src="https://github.com/user-attachments/assets/b23de724-5717-4adc-a532-906ba0718b40" />
 
 ---
 
@@ -312,11 +313,11 @@ M5 = $$- (\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{9}) × l^2$$  = $$- (\frac{90}{12}
 
 ### Solution
 
-#### **1. Calculation of steel required (mid-span / as given)**
+#### **1. Calculation of steel required at mid-span ( as given)**
 
 Formula used (as given):
 
-$$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{fy·bd²}].bd$$
+$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_{ck}·bd²}].bd$
 
 Using the provided numeric substitution:
 - Mu (given) = 239.1 × 10^6 N·mm  
@@ -325,7 +326,7 @@ Using the provided numeric substitution:
 - b = 300 mm  
 - d = 500 mm
 
-Numerical result (as provided):
+$Ast_{req} = \frac{0.5·35}{415}·[1 − √\frac{1 − (4.6 · 239.1 × 10^6)}{35·300.500²}].300.500$
 
 $$Ast_{req}$$ = 1613.1 mm²
 
@@ -344,7 +345,24 @@ Using the given values:
 - d = 500 mm
 
 Substituting values:
-$$Ast_{req} = \frac{0.5·25}{415}·[1 − √\frac{1 − (4.6 · 351.25 × 10^6)}{415·300.500²}].300.500$$ = 1613.1 $$mm^2$$
+
+$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_{ck}·bd²}].bd$
+
+  $= \frac{0.5·25}{415}·[1 − √\frac{1 − (4.6 · 351.25 × 10^6)}{415·300.500²}].300.500 = 1646.63 mm^2$
+
+$Ast_{req} at support = 1646.63 mm^2$
+
+Provide 25 mm Φ bars:
+- Area of one 25 mm Φ = π × 25² / 4 = 490.87 mm²  
+- No. of bars = $$\frac{Ast_{req}}{Area of one 10Φ} = \frac{1646.63}{490.87}$$ = 4 No.
+
+#### **3. Reinforcement Summary**
+
+**Provide 4-25 mm Φ bars at mid span out of which middle 2 bars are cut bars from distance of $0.15l_2$ from centre of the support**
+
+**Provide 4-25 mm Φ bars at top of support out of which middle 2 bars are cut bars from distance of $0.3l_2$ from face of the support**
+
+---
 
 **Ques 6:** Design slab of the corner bed room at second floor, which is part of 5 storeyed apartment to be constructed at Ludhiana. The inside size of room is 4.25m x 5.50m.
 
@@ -425,7 +443,7 @@ $M_y = α_y.W.lx^2$
 
 **$M_y = -8.689 kNm$**
 
-$$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{fy·bd_x²}].bd_x$$
+$$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_{ck}·bd_x²}].bd_x$$
 
 $$= \frac{0.5·25}{415}·[1 − √\frac{1 − (4.6 ·-14.796 x 10^6)}{415·1000.175²}].1000.175$$
 
@@ -437,7 +455,7 @@ Use 12mm Ø bar
 
 **Provide 12mm ф bar @300mm c/c**  Refer to Clause 26.3.3 (b) (2)
 
-$$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{fy·bd_y²}].bd_y$$
+$$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_{ck}·bd_y²}].bd_y$$
 
 $$= \frac{0.5·25}{415}·[1 − √\frac{1 − (4.6 ·-8.689 x 10^6)}{415·1000.175²}].1000.175$$
 
@@ -465,7 +483,7 @@ $= 0.035 x 12 x 4.424^2$
 
 **$M_y = 8.22 kNm$**
 
-$$Ast_{x} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{fy·bd_x²}].bd_x$$
+$$Ast_{x} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_{ck}.bd_x²}].bd_x$$
 
 $$= \frac{0.5·25}{415}·[1 − √\frac{1 − (4.6 ·11.273 x 10^6)}{415·1000.175²}].1000.175$$
 
@@ -477,7 +495,7 @@ Use 12mm Ø bar
 
 **Provide 12mm ф bar @300mm c/c**  Refer to Clause 26.3.3 (b) (2)
 
-$$Ast_{y} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{fy·bd_y²}].bd_y$$
+$$Ast_{y} = \frac{0.5·f_{ck}}{f_{y}}·[1 − √\frac{1 − (4.6 · Mu)}{f_{ck}·bd_y²}].bd_y$$
 
 $$= \frac{0.5·25}{415}·[1 − √\frac{1 − (4.6 ·8.22 x 10^6)}{415·1000.175²}].1000.175$$
 
