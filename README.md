@@ -252,7 +252,7 @@ Clear spans from left to right: 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m. Beam is sub
 
 ### Solution
 
-#### 1. Design (factored) uniformly distributed loads (using 1.5 load factor)
+#### **1. Design (factored) uniformly distributed loads (using 1.5 load factor)**
 
 $$Wu_{DL}$$ = 60 × 1.5 = 90 kN/m
 
@@ -261,7 +261,7 @@ $$Wu_{LL}$$ = 30 × 1.5 = 45 kN/m
 
 Total factored UDL (where needed) = 90 + 45 = 135 kN/m
 
-#### 2. Effective spans (clear span + support width)
+#### **2. Effective spans (clear span + support width)**
 
 (Use support width = 0.30 m added to the clear span at the relevant span as we don't know about effective depth)
 
@@ -269,10 +269,10 @@ For 4.5 m span: 4.5 + 0.3 = 4.8 m
 For 4.75 m span: 4.75 + 0.3 = 5.05 m
 For 5.0 m span: 5.0 + 0.3 = 5.3 m
 
-#### 3. Shear Forces
+#### **3. Shear Forces**
 **Use Formula**
 
-SF = $$(Coeff.Wu_{DL} + Coeff.Wu_{LL}) x l^2$$
+SF = $$(Coeff.Wu_{DL} + Coeff.Wu_{LL}) x l$$
 
 For Example : ((0.4 × Wu_DL) + (0.45 × Wu_LL)) × 4.8
 
@@ -323,7 +323,7 @@ M5 = $$- (\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{9}) × l^2$$  = $$- (\frac{90}{12}
 
 ---
 
-**Ques 5:** — Design of 2nd span of continuous beam of question 4.
+**Ques 5:** — Design of 2nd span of continuous beam of **question 4**.
 
 ### Given
 - Clear span (2nd span): 4.75 m  
@@ -339,7 +339,7 @@ M5 = $$- (\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{9}) × l^2$$  = $$- (\frac{90}{12}
 
 Formula used (as given):
 
-Ast,req = $$\frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{fy·bd²}].bd$$
+$$Ast_{req}$$ = $$\frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{fy·bd²}].bd$$
 
 Using the provided numeric substitution:
 - Mu (given) = 239.1 × 10^6 N·mm  
@@ -360,23 +360,20 @@ Provide 25 mm Φ bars:
 #### **2. Support reinforcement $$(A_{st})$$ — calculation and bar selection**
 
 Using the given values:
-- Mu (support) = 351.25 × 10^6 N·mm  
+- Mu (support) = 351.25 × $$10^6$$ N·mm  
 - fck = 25 MPa  
 - fy = 415 MPa  
 - b = 300 mm  
 - d = 500 mm
 
-Formula used (as in the worked examples):
-Ast_req = 0.5 × b × d × [1 − √(1 − (4.6 × Mu) / (fy × b × d² / fck))]
-
 Substituting values:
-- 4.6 × Mu = 4.6 × 351.25 × 10^6 = 1.61575 × 10^9
-- (fy × b × d² / fck) = 415 × 300 × 500² / 25 = (evaluate as per formula)
+$$Ast_{req}$$ = $$\frac{0.5·25}{415}·[1 − √\frac{1 − (4.6 · 351.25 × 10^6)}{415·300.500²}].300.500$$ = 1613.1 $$mm^2$$
 
 **Ques 6:** Design slab of the corner bed room at second floor, which is part of 5 storeyed apartment to be constructed at Ludhiana. The inside size of room is 4.25m x 5.50m.
 
 
-**Answer 6:** Given data
+**Answer 6:** 
+### Given data
 
 Size of room = 4.25m x5.5m
 
@@ -386,37 +383,41 @@ ly = 5.5m
 
 Assume width of support =230mm
 
-### 1. Calculate depth
+#### 1. Calculate depth
 
 Assume total depth of slab = 200mm
 
-clear cover = 20mm (mild exp. condt.)
+clear cover, c = 20mm **(mild exposure condition)**
 
 Use 10mm φ bar
 
-Eff. depth of slab D-20-φ/2 = 200-20-10/2 = 175mm
+Eff. depth of slab
 
-dy = D-20-φ-φ/2 = 200-20-12-12/2 = 162mm
+$$d_x$$ = D-c-φ/2 = 200-20-10/2 = 175mm
+
+$$d_y$$ = D-20-φ-φ/2 = 200-20-12-12/2 = 162mm
 
 Grade of conc. = M25
+
 Steel = Fe 415
 
-### 2. Design Loads
-Design load Dead load = 25 x0.2 = 5KN/m²
+#### 2. Design Loads
 
-live load = 3KN/m²
+Design load Dead load = 25 x 0.2 = 5 kN/m²
+
+live load = 3 kN/m²
 ```
-Factored (design) load = 1.5 (DL + LL) = 1.5(513) = 12KN/m^2
+Factored (design) load = 1.5 (DL + LL) = 1.5 x (5 + 3) = 12kN/m^2
 ```
 
-### 3. Eff span
-lx (Shorter span)
+#### 3. Eff span
+$$l_x$$ (Shorter span)
 
 lx = 4.25 + 0.174 = 4.424m
 
 lx = 4.25 + 0.23 = 4.48m
 
-Take **lx = 4.424m**
+Take lower value of the above **lx = 4.424m**
 
 ly (Longer span)
 
@@ -424,7 +425,7 @@ ly = 5.5 + 0.162 = 5.662m
 
 ly = 5.5 + 0.23 = 5.73m
 
-Take **ly = 5.662m**
+Take lower value of the above **ly = 5.662m**
 
 ### 4. Calculation of Moment and steel
 Aspect Ratio = ly/lx = 5.661/4.424 = 1.279
@@ -432,15 +433,15 @@ Aspect Ratio = ly/lx = 5.661/4.424 = 1.279
 Type of Panel of moment considered - Two adjacent edges discontine
 
 #### 4.1 Negative moment at continuous edge
-ax = -0.063 ay = -0.037
+$$α_x = -0.063 a_y$$ = -0.037
 
-Mx = αx W lx^2
+$$M_x$$ = $$α_x$$ W $$lx^2$$
 
 = -0.063 x 12 x 4.424^2
 
 **Mx = -14.796 kNm**
 
-My = αy W lx^2
+$$M_y$$ = $$α_y$$ W $$lx^2$$
 
 = -0.037 x 12 x 4.424^2
 
