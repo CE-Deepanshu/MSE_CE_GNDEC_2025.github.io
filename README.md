@@ -19,7 +19,8 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 
  ---
  
-# MSE-1
+# MSE 1 DESIGN OF CONCRETE STRUCTURES
+---
 **Date:23/09/2025** 
 
 **Quest 1:** What clear cover be provided for a beam which is part of a bridge deck to be constructed over the Arabian Sea, along the western cost of Mumbai.
