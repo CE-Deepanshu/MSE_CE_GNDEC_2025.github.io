@@ -1,7 +1,7 @@
 # MSE_CE_GNDEC_2025.github.io
-
+```
 Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) for Civil Engineering. This repo. aims to provide clear, step-by-step solutions to past papers, sample questions, and challenging problems, complete with detailed diagrams and explanations.
-
+```
 | **GURU NANAK DEV ENGINEERING COLLEGE, LUDHIANA** |
 |--------------------------------------------------|
 | **Department of Civil Engineering**              |
@@ -13,9 +13,13 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 | Max Marks        | 24                 | Time Duration | 1 Hr. 30 Min.    |
 | Date of MST      | 23/09/2025         | Roll Number   | 2214078          |
 
-[Blog- Experience of creatinng this innovative repository for complete solution of MSE-1](Blog@MSE-1.html)
+---
 
-**MSE-1**
+[Blog- Experience of creating this innovative repository for complete solution of MSE-1](Blog@MSE-1.html)
+
+ ---
+ 
+# MSE-1
 **Date:23/09/2025** 
 
 **Quest 1:** What clear cover be provided for a beam which is part of a bridge deck to be constructed over the Arabian Sea, along the western cost of Mumbai.
@@ -55,7 +59,6 @@ Clear spans from left to right: 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m. Beam is sub
 
 **Ques 6:** Design slab of the corner bed room at second floor, which is part of 5 storeyed apartment to be constructed at Ludhiana. The inside size of room is 4.25m x 5.50m.
 
-
-**Answer 6:** 
+**[Answer 6:](index6.md)** 
 
 
