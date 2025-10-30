@@ -40,7 +40,7 @@ $$Wu_{LL}$$ = 1.3 × 1.5 = 1.95 kN/m (at free end)
 
 - Moment at fixed end due to dead load:
 
-$$Mu_{DL} = \frac{(2.022 × 1.5²)}{2}$$ = 2.27 kNm
+$Mu_{DL} = \frac{(2.022 × 1.5²)}{2}$ = 2.27 kNm
 
 - Moments due to live load (considering alternatives):
 
