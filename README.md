@@ -349,18 +349,15 @@ Using the provided numeric substitution:
 - d = 500 mm
 
 Numerical result (as provided):
-```
-Ast,req = 1613.1 mm²
-```
+
+$$Ast_{req}$$ = 1613.1 mm²
 
 Provide 25 mm Φ bars:
 - Area of one 25 mm Φ = π × 25² / 4 = 490.87 mm²  
 - Number of bars = 1613.1 / 490.87 = 3.28 → provide 4 bars  
-- Ast,provided = 4 × 490.87 = 1963.48 mm²
+- $$Ast_{provided}$$ = 4 × 490.87 = 1963.48 mm²
 
----
-
-### 2. Support reinforcement (Ast) — calculation and bar selection
+#### **2. Support reinforcement $$(A_{st})$$ — calculation and bar selection**
 
 Using the given values:
 - Mu (support) = 351.25 × 10^6 N·mm  
