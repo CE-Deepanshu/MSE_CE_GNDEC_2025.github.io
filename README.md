@@ -26,7 +26,7 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 
 **Quest 1:** What clear cover be provided for a beam which is part of a bridge deck to be constructed over the Arabian Sea, along the western cost of Mumbai.
 
-**[Answer 1:](1index.md)** 
+**[Answer 1:](Ans1.md)** 
 
 ---
 
@@ -35,13 +35,13 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 <img width="388" height="228" alt="image" src="https://github.com/user-attachments/assets/1b6f3d3b-7260-4234-9d3e-a7c5ba60fa7d" />
 
 
-**[Answer 2:](2index.md)** 
+**[Answer 2:](Ans2.md)** 
 
 ---
 
 **Ques 3.** Design stairs consisting of independent steps project from the face of RCC wall. The stairs will be part of a mall be constructed in Goa.
 
-**[Answer 3:](3_docs.md)** 
+**[Answer 3:](Ans3.md)** 
 
 ---
 
