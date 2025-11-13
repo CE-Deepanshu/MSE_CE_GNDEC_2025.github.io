@@ -32,7 +32,8 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 
 **Ques 2:** Analysis for the maximum BM to be considered for the design of the landing slab of a staircase shown in the figure, taking total design lead on landing and flight as 10 KN/m², X = 0.45m, Y = 0.6m & G=2.5m. Clear width of staircase is 2.4m and brick walls supporting Staircase have thickness of 250mm.
 
-<img width="542" height="342" alt="image" src="https://github.com/user-attachments/assets/39c84742-f954-45bf-9633-cac11d9f32a7" />
+<img width="388" height="228" alt="image" src="https://github.com/user-attachments/assets/1b6f3d3b-7260-4234-9d3e-a7c5ba60fa7d" />
+
 
 **[Answer 2:](2index.md)** 
 
