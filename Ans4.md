@@ -63,9 +63,9 @@ $M1 = 1 ( \frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{10} ) × l^2 = 1 ( \frac{90}{12} +
 
 **1.2 At middle of interior span**
 
-$M2 = (\frac{Wu_{DL}}{16} + \frac{Wu_{LL}}{12}) × l^2  (\frac{90}{12} + \frac{45}{10}) × 5.05^2 = 239.1 kNm$
+$M2 = \left( \frac{W_{10L}}{16} + \frac{W_{11L}}{12} \right) \times l^2 \left( \frac{90}{12} + \frac{45}{10} \right) \times 5.05^2 = 239.1kNm\$
 
-$M3 = (\frac{Wu_{DL}}{16} + \frac{Wu_{LL}}{12}) × l^2  = (\frac{90}{16} + \frac{45}{12}) × 5.3^2 = 263.34  kNm$
+\[M3 = \left( \frac{W_{10L}}{16} + \frac{W_{11L}}{12} \right) \times l^2 = \left( \frac{90}{16} + \frac{45}{12} \right) \times 5.3^2 = 263.34kNm\]
 
 **1. Support moments** 
 
