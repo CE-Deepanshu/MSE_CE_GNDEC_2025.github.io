@@ -52,30 +52,30 @@ SF4 = ((0.5 × 90) + (0.6 × 45)) × 5.3 = 381.6 kN
 
 #### 4. Bending Moments
 **Formula used**
-```
-Mu = (Wu,DL/12 + Wu,LL/10) × l^2 
-```
+
+$Mu = (\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{10}) × l^2$  **(Example)**
+
 **1. Span moments** 
 
 **1.1 Near middle of end span**
 
-M1 = (Wu,DL/12 + Wu,LL/10) × l^2  = (90/12 + 45/10) × 4.8^2 = 276.48 kNm
+$M1 = (\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{10}) × l^2  = (\frac{90}{12} + \frac{45}{10}) × 4.8^2 = 276.48 kNm$
 
 **1.2 At middle of interior span**
 
-M2 = (Wu,DL/16 + Wu,LL/12) × l^2  = (Wu,90/12 + 45/10) × 5.05^2 = 239.1 kNm
+$M2 = (\frac{Wu_{DL}}{16} + \frac{Wu_{LL}}{12}) × l^2  = (\frac{90}{12} + \frac{45}{10}) × 5.05^2 = 239.1 kNm$
 
-M3 = (Wu,DL/16 + Wu,LL/12) × l^2  = (Wu,90/16 + 45/12) × 5.3^2 = 263.34 kNm
+$M3 = (\frac{Wu_{DL}}{16} + \frac{Wu_{LL}}{12}) × l^2  = (\frac{90}{16} + \frac{45}{12}) × 5.3^2 = 263.34  kNm$
 
 **1. Support moments** 
 
 **At support next to the end supports**
 
-\[\M4 = -(\frac{Wu_DL}{10} + Wu,LL/9) × l^2 = -(90/10 + 45/9) × 4.8^2 = -322.56 kNm\]
+$M4 = -( \frac{Wu_{DL}}{10} + \frac{Wu_{LL}}{9}) × l^2 = -(\frac{90}{10} + \frac{45}{9}) × 4.8^2 = -322.56 kNm$
 
 **At support next to the end supports**
 
-M5 = -(Wu,DL/12 + Wu,LL/9) × l^2  =  -(90/12 + 45/9) × 5.3^2 = -351.125 kNm
+$M5 = -(\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{9}) × l^2  =  -(\frac{90}{12} + \frac{45}{9}) × 5.3^2 = -351.125 kNm$
 ```
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
