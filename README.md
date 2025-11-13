@@ -55,7 +55,7 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 
 **Ques 5:** — Design of 2nd span of continuous beam of **question 4**.
 
-**[Answer 5:](5index.md)**
+**[Answer 5:](Ans5.html)**
 
 ---
 
