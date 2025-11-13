@@ -59,7 +59,7 @@ $Mu = (\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{10}) × l^2$  **(Example)**
 
 **1.1 Near middle of end span**
 
-\[\M1 \equal 1 (\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{10}) × \l^2 \equal 1 (\frac{90}{12} + \frac{45}{10}) × \4.8^2 \equal 1 276.48 kNm\]\
+$M1 = 1 ( \frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{10} ) × l^2 = 1 ( \frac{90}{12} + \frac{45}{10} ) × 4.8^2 = 1 276.48 kNm$
 
 **1.2 At middle of interior span**
 
