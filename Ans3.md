@@ -91,7 +91,7 @@ Spacing = Area of one 8Φ/ Ast,min. x 1000
 ```
 **Provide Distribution bars 8 mm Φ @ 270 mm c/c**
 
-#### 5. Design Summary 
+#### ✅ 5. Design Summary 
 **Grade of Concrete : M20**
 
 **Grade of Steel : Fe415**
