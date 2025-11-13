@@ -12,29 +12,28 @@
 ### Solution
 
 #### **1. Design (factored) uniformly distributed loads (using 1.5 load factor)**
+```
+Wu,DL = 60 × 1.5 = 90 kN/m
 
-$$Wu_{DL}$$ = 60 × 1.5 = 90 kN/m
-
-$$Wu_{LL}$$ = 30 × 1.5 = 45 kN/m
-
+Wu,LL = 30 × 1.5 = 45 kN/m
 
 Total factored UDL (where needed) = 90 + 45 = 135 kN/m
-
+```
 #### **2. Effective spans (clear span + support width)**
-
+```
 (Use support width = 0.30 m added to the clear span at the relevant span as we don't know about effective depth)
 
 For 4.5 m span: 4.5 + 0.3 = 4.8 m
 For 4.75 m span: 4.75 + 0.3 = 5.05 m
 For 5.0 m span: 5.0 + 0.3 = 5.3 m
-
+```
 #### **3. Shear Forces**
 **Use Formula**
-
-SF = $$(Coeff.Wu_{DL} + Coeff.Wu_{LL}) x l$$
+```
+SF = Coeff.Wu,DL + Coeff.Wu,LL x l
 
 For Example : ((0.4 × Wu_DL) + (0.45 × Wu_LL)) × 4.8
-
+```
 **1. At end supports (SF1)**
 
 SF1 = ((0.4 × 90) + (0.45 × 45)) × 4.8 = 270 kN
@@ -55,27 +54,27 @@ SF4 = ((0.5 × 90) + (0.6 × 45)) × 5.3 = 381.6 kN
 
 #### 4. Bending Moments
 **Formula used**
-
-Mu = $$(Coeff.Wu_{DL} + Wu_{LL}) × l^2$$ 
-
+```
+Mu = (Wu,DL/12 + Wu,LL/10) × l^2 
+```
 ##### **1. Span moments** 
 
 **1.1 Near middle of end span**
 
-M1 = $$\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{10} × l^2  = \frac{90}{12} + \frac{45}{10}) × 4.8^2$$ = 276.48 kNm
+M1 = (Wu,DL/12 + Wu,LL/10) × l^2  = (90/12 + 45/10) × 4.8^2 = 276.48 kNm
 
 **1.2 At middle of interior span**
 
-M2 = $$(\frac{Wu_{DL}}{16} + \frac{Wu_{LL}}{12}) × l^2$$  = $$(\frac{90}{16} + \frac{45}{12}) × 5.05^2$$ = 239.1 kNm
+M2 = (Wu,DL/16 + Wu,LL/12) × l^2  = (Wu,90/12 + 45/10) × 5.05^2 = 239.1 kNm
 
-M3 = $$(\frac{Wu_{DL}}{16} + \frac{Wu_{LL}}{12}) × l^2$$  = $$(\frac{90}{16} + \frac{45}{12}) × 5.3^2$$ = 263.34 kNm
+M3 = (Wu,DL/16 + Wu,LL/12) × l^2  = (Wu,90/16 + 45/12) × 5.3^2 = 263.34 kNm
 
-##### **1. Span moments** 
-
-**At support next to the end supports**
-
-M4 = $$- (\frac{Wu_{DL}}{10} + \frac{Wu_{LL}}{9}) × l^2$$  = $$- (\frac{90}{10} + \frac{45}{9}) × 4.8^2$$ = -322.56 kNm
+##### **1. Support moments** 
 
 **At support next to the end supports**
 
-M5 = $$- (\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{9}) × l^2$$  = $$- (\frac{90}{12} + \frac{45}{9}) × 5.3^2$$ = -351.125 kNm
+M4 = -(Wu,DL/10 + Wu,LL/9) × l^2 = -(90/10 + 45/9) × 4.8^2 = -322.56 kNm
+
+**At support next to the end supports**
+
+M5 = -(Wu,DL/12 + Wu,LL/9) × l^2  =  -(90/12 + 45/9) × 5.3^2 = -351.125 kNm
