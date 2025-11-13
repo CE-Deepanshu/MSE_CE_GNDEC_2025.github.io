@@ -76,7 +76,9 @@ $M4 = -( \frac{Wu_{DL}}{10} + \frac{Wu_{LL}}{9}) × l^2 = -(\frac{90}{10} + \fra
 **At support next to the end supports**
 
 $M5 = -(\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{9}) × l^2  =  -(\frac{90}{12} + \frac{45}{9}) × 5.3^2 = -351.125 kNm$
+
 ```
+
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     tex2jax: {
@@ -89,4 +91,5 @@ $M5 = -(\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{9}) × l^2  =  -(\frac{90}{12} + \fr
 <script type="text/javascript"
         src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+
 ```
