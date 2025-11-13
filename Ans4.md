@@ -71,7 +71,7 @@ M3 = (Wu,DL/16 + Wu,LL/12) × l^2  = (Wu,90/16 + 45/12) × 5.3^2 = 263.34 kNm
 
 **At support next to the end supports**
 
-$M4 = -(\frac{Wu_DL}{10}$ + Wu,LL/9) × l^2 = -(90/10 + 45/9) × 4.8^2 = -322.56 kNm
+\[\M4 = -(\frac{Wu_DL}{10} + Wu,LL/9) × l^2 = -(90/10 + 45/9) × 4.8^2 = -322.56 kNm\]
 
 **At support next to the end supports**
 
