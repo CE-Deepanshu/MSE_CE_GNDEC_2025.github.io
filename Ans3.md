@@ -27,11 +27,14 @@ Wu,DL = 1.311 × 1.5 = 1.966 kN/m
 ```
 
 ##### 1.2 Live load
-(i) Load Case I: (  The Loading Code **[IS 875 : 1987 (Part II)]** recommends a uniformly distributed load of 5.0 kN/m2 in general, on the going, as well as the landing. ) 
+###### **(i) Load Case I:**
+
+The Loading Code **[IS 875 : 1987 (Part II)]** recommends a uniformly distributed load of 5.0 kN/m2 in general, on the going, as well as the landing. 
+
 ```
 Wu,LL1 = 5.0 × 0.3 × 1.5 = 2.250 kN/m
 ```
-(ii) Load Case II:
+###### **(ii) Load Case II:**
 ```
 Wu,LL2 = 1.3 × 1.5 = 1.95 kN/m (at free end)
 ```
@@ -61,36 +64,40 @@ d = 150 - 20 - 10/2 = 125 mm
 
 **Required main steel area (Ast) using the following expression:**
 ```
-Ast,required = 0.5.fck/fy*(1-√(1-((4.6*Mu*10^6)/(fck*b*d^2))))*b*dAst,required = 0.5.fck/fy*(1-√(1-((4.6*5.2*10^6)/(fck*b*d^2))))*b*d
-
- = $$\frac{0.5·20}{415}·[1 − √\frac{1 − (4.6 · 5.2 x 10^6)}{20·310.125²}].310.125$$
-
-$$Ast_{req}$$= 123.37 mm² ~ 124 mm²
+Ast,required = 0.5.fck/fy x (1-√(1-((4.6.Mu x 10^6)/(fck.b.d^2)))) x b x d
+             = 0.5 x 20/415 x (1-√(1-((4.6 x 5.2 x 10^6)/(20 x 300 x 125^2)))) x 300 x 125
+Ast,required = 123.75 mm² ~ 124 mm²
 
 Provide main bars of 10 mm dia.
 
-Area of one 10Φ = $$\frac{π}{4}$$ × 10² = 78.54 mm²
+Area of one 10Φ = π/4 × 10² = 78.54 mm²
 
-No. of bars = $$\frac{Ast_{req}}{Area of one 10Φ} = \frac{124}{78.54}$$ = 3 No.
+No. of bars = Ast,required/ Area of one 10Φ = 124/ 78.54 = 3 No.
 
-$$A_{st provided}$$ = 3 × 78.54 = 235.62 mm²  ~ 124 mm²
+Ast,provided = 3 × 78.54 = 235.62 mm²  ~ 124 mm²
+```
+**Provide Main bars 8 mm Φ @ 270 mm c/c**
 
 #### 4. Design of Distribution Bars
 
 **Minimum steel for distribution bars:**
-
-$$A_{st,min}$$ = 0.12% × b × d = 0.12% × 310 × 125 = 180 mm²
-
+```
+Ast,min. = 0.12% × b × d = 0.12% × 310 × 125 = 180 mm²
 Provide 8 mm bar:
-
 Area of one 8Φ = π/4 × 8² = 50.27 mm²  (approx)
 
-**Spacing** = $$\frac{Area of one 8Φ}{A_{st,min}}$$ x 1000
-            = $$\frac{50.27 mm²}{180}$$ x 1000  = 278.88 mm
+Spacing = Area of one 8Φ/ Ast,min. x 1000
+            = 50.27 mm²/ 180 x 1000  = 278.88 mm
+```
+**Provide Distribution bars 8 mm Φ @ 270 mm c/c**
 
-**Provide distribution bars 8 mm Φ @ 270 mm c/c**
+#### 5. Design Summary 
+**Grade of Concrete : M20**
 
-#### 5. Summary / Provided reinforcement
+**Grade of Steel : Fe415**
+
+**Clear Cover : 20mm**
+
 **Main reinforcement: 3 nos. 10 mm Ø bars (Ast provided = 235.6 mm²)**
 
 **Distribution bars: 8 mm Ø @ 270 mm c/c**
