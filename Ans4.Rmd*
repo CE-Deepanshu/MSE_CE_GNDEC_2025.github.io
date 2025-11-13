@@ -1,3 +1,8 @@
+```
+title: ""
+Output: html_document
+```
+
 ## Answer 4
 ---
 ### Given data
@@ -76,23 +81,4 @@ $M4 = -( \frac{Wu_{DL}}{10} + \frac{Wu_{LL}}{9}) × l^2 = -(\frac{90}{10} + \fra
 **At support next to the end supports**
 
 $M5 = -(\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{9}) × l^2  =  -(\frac{90}{12} + \frac{45}{9}) × 5.3^2 = -351.125 kNm$
-
-```
-markdown: kramdown
-```
-
-```
-<script type="text/x-mathjax-config">
- <script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-```
+---
