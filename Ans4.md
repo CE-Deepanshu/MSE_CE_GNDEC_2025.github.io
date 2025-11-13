@@ -1,7 +1,5 @@
 ## Answer 4
-
 ---
-
 ### Given data
 
 - Clear spans (left → right): 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m  
@@ -57,7 +55,7 @@ SF4 = ((0.5 × 90) + (0.6 × 45)) × 5.3 = 381.6 kN
 ```
 Mu = (Wu,DL/12 + Wu,LL/10) × l^2 
 ```
-##### **1. Span moments** 
+**1. Span moments** 
 
 **1.1 Near middle of end span**
 
@@ -69,7 +67,7 @@ M2 = (Wu,DL/16 + Wu,LL/12) × l^2  = (Wu,90/12 + 45/10) × 5.05^2 = 239.1 kNm
 
 M3 = (Wu,DL/16 + Wu,LL/12) × l^2  = (Wu,90/16 + 45/12) × 5.3^2 = 263.34 kNm
 
-##### **1. Support moments** 
+**1. Support moments** 
 
 **At support next to the end supports**
 
