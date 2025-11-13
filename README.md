@@ -49,7 +49,7 @@ Welcome to a comprehensive repository dedicated to the MST (Mid Semester Test) f
 
 <img width="810" height="252" alt="image" src="https://github.com/user-attachments/assets/525c9de1-a2b2-4470-88d0-5b593c2c9492" />
 
-**[Answer 4:](4index.md)**
+**[Answer 4:](Ans4.md)**
 
 ---
 
