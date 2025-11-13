@@ -10,61 +10,58 @@
 - Grade of steel = Fe 415, fy = 415 N/mm²
 
 ### Solution
-
-- It is desirable to make the actual width of the tread slab, B, about 10 mm more than the effective tread, so that there is a marginal overlap between adjacent tread slabs.  
-  - B = 310 mm
-
-- Assume a slab thickness at the fixed support, t = 150 mm.  
+ Assume a slab thickness at the fixed support, t = 150 mm.  
   - The slab thickness may be kept constant for a distance of, say, 300 mm from the support and tapered to a minimum thickness of 80 mm (as shown in the referenced figure).
 
 #### 1. Design loads
 
 ##### 1.1 Dead loads
-(1) Self weight of tread slab = 25 × (0.15 × 0.31) = 1.162 kN/m
+(1) Self weight of tread slab = 25 × (0.15 × 0.3) = 1.125 kN/m (Refer to Clause 19.2, Page No. 32, IS 456)  
 
-(2) Finishes = 0.6 × 0.31 = 0.186 kN/m
+(2) Finishes = 0.6 × 0.31 = 0.186 kN/m (Refer Table No. 2, Part-1, Page No. 30, IS 875 : 1987)
 
-Total dead load, DL = 1.162 + 0.186 = 1.348 kN/m
+Total dead load, DL = 1.125 + 0.186 = 1.311 kN/m
 
-$$Wu_{DL}$$ = 1.348 × 1.5 = 2.022 kN/m
-
+```
+Wu,DL = 1.311 × 1.5 = 1.966 kN/m
+```
 
 ##### 1.2 Live load
-(i) Alternative I:
-
-$$Wu_{LL}$$ = 5.0 × 0.3 × 1.5 = 2.250 kN/m
-
-(ii) Alternative II:
-
-$$Wu_{LL}$$ = 1.3 × 1.5 = 1.95 kN/m (at free end)
-
+(i) Load Case I: (  The Loading Code **[IS 875 : 1987 (Part II)]** recommends a uniformly distributed load of 5.0 kN/m2 in general, on the going, as well as the landing. ) 
+```
+Wu,LL1 = 5.0 × 0.3 × 1.5 = 2.250 kN/m
+```
+(ii) Load Case II:
+```
+Wu,LL2 = 1.3 × 1.5 = 1.95 kN/m (at free end)
+```
 #### 2. Design Moments
 
 - Moment at fixed end due to dead load:
 
-$Mu_{DL} = \frac{(2.022 × 1.5²)}{2}$ = 2.27 kNm
+Mu,DL = (1.966 × 1.5²)/ 2 = 2.211 kNm
 
 - Moments due to live load (considering alternatives):
 
-$$Mu_{LL} (Alt I) = \frac{(2.25 × 1.5²)}{2}$$ = 2.53 kNm
+Mu,LL - Load Case 1 = (2.25 × 1.5²)/ 2 = 2.53 kNm
 
-$$Mu_{LL}$$ (Alt II) = 1.95 × 1.5 = 2.93 kNm  (more critical)
+Mu,LL - Load Case 2 = 1.95 × 1.5 = 2.93 kNm  (more critical)
   
 -Total design bending moment at fixed end:
-
-Mu = $$Mu_{DL} + Mu_{LL}$$ = 2.27 + 2.93 = 5.20 kNm
-
+```
+Mu = Mu,DL + Mu,LL = 2.211 + 2.93 = 5.141 ~ 5.2 kNm
+```
 
 #### 3. Design of Main Bars
 
 Assume clear cover = 20 mm **(mild exposure)** and bar diameter = 10 mm.  
 **Effective depth:**
 
-d = 150 - 20 - $$\frac{10}{2}$$ = 125 mm
+d = 150 - 20 - 10/2 = 125 mm
 
 **Required main steel area (Ast) using the following expression:**
-
-$Ast_{req} = \frac{0.5·f_{ck}}{f_y}·[1 − √\frac{1 − (4.6 · Mu)}{f_ck·bd²}].bd$
+```
+Ast,required = 0.5.fck/fy*(1-√(1-((4.6*Mu*10^6)/(fck*b*d^2))))*b*dAst,required = 0.5.fck/fy*(1-√(1-((4.6*5.2*10^6)/(fck*b*d^2))))*b*d
 
  = $$\frac{0.5·20}{415}·[1 − √\frac{1 − (4.6 · 5.2 x 10^6)}{20·310.125²}].310.125$$
 
