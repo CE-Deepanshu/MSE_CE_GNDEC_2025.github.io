@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Engineering Calculations</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background-color: white;
+            line-height: 1.6;
+            margin: 40px;
+            color: #333;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        .calculation-block {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .formula {
+            font-family: "Times New Roman", serif;
+            font-style: italic;
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #f0f7ff;
+            border-radius: 5px;
+        }
+        .result {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        code {
+            background-color: #f1f1f1;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #bdc3c7;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+  <h2>Answer 5.</h2>
+   
+  <p>Effective span of beam, L = 4.75+3 = 5.05m</p>
+   
+  <p>Assume d= 500mm  b=300mm</p>
+
+  <p>Calculation of steel Required:</p>
+
+  <div class="formula">
+    A<sub>st</sub> = <span class="fraction"> <span class="numerator">0.5 x f<sub>ck</sub></span> <span class="denominator">f<sub>y</sub></span> </span> x (1 - &radic;<span class="numerator">1 - 4.6.M<sub>u</sub></span> <span class="denominator">f<sub>ck</sub>.b.d<sup>2</sup></span> </span>).b.d
+  </div>
+</body>
