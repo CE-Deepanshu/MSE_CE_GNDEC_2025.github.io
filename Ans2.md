@@ -80,4 +80,5 @@ The design maximum bending moment at midspan of the landing is:
 
 Mu = 15.3 kNm
 ```
-<img width="733" height="331" alt="image" src="https://github.com/user-attachments/assets/f2f38b0b-56c3-4e2a-843e-69a7d3429b9a" />
+<img width="614" height="264" alt="image" src="https://github.com/user-attachments/assets/e4704712-79f7-4a57-ab49-5a0605ef52a4" />
+
