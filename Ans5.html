@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Structural Engineering Calculations</title>
+    <title>Beam Design Calculation</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
@@ -37,6 +37,7 @@
             padding: 10px;
             background-color: #f0f7ff;
             border-radius: 5px;
+            text-align: center;
         }
         .result {
             font-weight: bold;
@@ -54,17 +55,68 @@
             background: #bdc3c7;
             margin: 30px 0;
         }
+        .correction {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .section {
+            margin: 25px 0;
+        }
     </style>
 </head>
 <body>
-  <h2>Answer 5.</h2>
-   
-  <p>Effective span of beam, L = 4.75+3 = 5.05m</p>
-   
-  <p>Assume d= 500mm  b=300mm</p>
+    <h2>Answer 5.</h2>
+    
+    <div class="section">
+        <h3>Given Data</h3>
+        <div class="calculation-block">
+            <p>Effective span of beam, L = 4.75 + 0.3 = 5.05 m</p>
+            <p>Assume d = 500 mm, b = 300 mm</p>
+            <p>f<sub>ck</sub> = 25 MPa, f<sub>y</sub> = 415 MPa</p>
+            <p>M<sub>u</sub> = 239.1 kN·m = 239.1 × 10⁶ N·mm</p>
+        </div>
+    </div>
 
-  <p>Calculation of steel Required:</p>
-<div class= "formula">
-    $$A<sub>st</sub> = ({\frac{0.5.f<sub>ck</sub>}{f<sub>y</sub>}}.(1 - \sqrt{\frac{1 - 4.6.M<sub>u</sub>}{f<sub>ck</sub>.b.d<sup>2</sup>}}).b.d$$
-</div>
+    <h3>Solution</h3>
+
+    <div class="section">
+        <h3>Calculation of Steel Required (Mid-Span)</h3>
+        
+        <div class="formula">
+            $$A_{st,req} = \frac{0.5 \times f_{ck}}{f_y} \left[ 1 - \sqrt{1 - \frac{4.6 \times M_u}{f_{ck} \times b \times d^2}} \right] \times b \times d$$
+                      <caption>$$ = \frac{0.5 \times 25}{415} \left[ 1 - \sqrt{1 - \frac{4.6 \times 239.1 \times 10^6}{25 \times 300 \times 500^2}} \right] \times 300 \times 500$$</caption>
+             <p class="result">A<sub>st,req</sub> = 1613.1 mm²</p>
+        </div>
+        
+        <div class="calculation-block">
+            <p>Provide 25mm diameter bars</p>
+            <p>$$Area of 1-25mm Ø bar = \frac{π}{4} \times 25^2 = 490.87 mm^2$$</p>
+            <p>$$No. of bars = \frac{A_{st,req}}{Area of 1 bar} = \frac{1613.1}{490.87} = 3.28 \approx 4 No.$$</p>
+            <p class="result">Provide 4 nos of 25mm diameter bars</p>
+            <p class="result">Actual A<sub>st,provided</sub> = 4 × 490.87 = 1963.48 mm²</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Steel Required at Support</h3>
+        
+        <div class="formula">
+            $$A_{st,req(support)} = \frac{0.5 \times f_{ck}}{f_y} \left[ 1 - \sqrt{1 - \frac{4.6 \times M_5}{f_{ck} \times b \times d^2}} \right] \times b \times d$$
+            $$A_{st,req(support)} = \frac{0.5 \times 25}{415} \left[ 1 - \sqrt{1 - \frac{4.6 \times 351.25 \times 10^6}{25 \times 300 \times 500^2}} \right] \times 300 \times 500$$
+          <p class="result">A<sub>st,req(support)</sub> = 1646.63 mm²</p>
+        </div>
+        
+       <div class="calculation-block">
+            <p>Provide 25mm diameter bars</p>
+            <p>$$Area of 1-25mm Ø bar = \frac{π}{4} \times 25^2 = 490.87 mm^2$$</p>
+            <p>$$No. of bars = \frac{A_{st,req}}{Area of 1 bar} = \frac{1646.63}{490.87} = 3.35 \approx 4 No.$$</p>
+            <p>No. of bars = A<sub>st,req(support)</sub> / Area of 1 bar = 1646.63 / 490.87 = 3.35</p>
+            <p class="result">Provide 4 nos of 25mm diameter bars</p>
+            <p class="result">Actual A<sub>st,provided</sub> = 4 × 490.87 = 1963.48 mm²</p>
+        </div>
+    </div>
+
 </body>
+</html>
