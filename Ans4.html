@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Engineering Calculations</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background-color: white;
+            line-height: 1.6;
+            margin: 40px;
+            color: #333;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        .calculation-block {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .formula {
+            font-family: "Times New Roman", serif;
+            font-style: italic;
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #f0f7ff;
+            border-radius: 5px;
+        }
+        .result {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        code {
+            background-color: #f1f1f1;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #bdc3c7;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Answer 4</h2>
+    <hr>
+    
+    <h3>Given data</h3>
+    <ul>
+        <li>Clear spans (left → right): 4.5 m, 4.75 m, 5.0 m, 4.75 m, 4.5 m</li>
+        <li>Support width (masonry): 300 mm = 0.30 m</li>
+        <li>Dead load (service): 60 kN/m (incl. self weight)</li>
+        <li>Imposed (live) load (service): 30 kN/m</li>
+    </ul>
+    
+    <h3>Solution</h3>
+    
+    <h4>1. Design (factored) uniformly distributed loads (using 1.5 load factor)</h4>
+    <div class="calculation-block">
+        <code>Wu,DL = 60 × 1.5 = 90 kN/m</code><br><br>
+        <code>Wu,LL = 30 × 1.5 = 45 kN/m</code><br><br>
+        <code>Total factored UDL (where needed) = 90 + 45 = 135 kN/m</code>
+    </div>
+    
+    <h4>2. Effective spans (clear span + support width)</h4>
+    <div class="calculation-block">
+        <code>For 4.5 m span: 4.5 + 0.3 = 4.8 m</code><br>
+        <code>For 4.75 m span: 4.75 + 0.3 = 5.05 m</code><br>
+        <code>For 5.0 m span: 5.0 + 0.3 = 5.3 m</code>
+    </div>
+    
+    <h4>3. Shear Forces</h4>
+    <p><strong>Use Formula</strong></p>
+    <div class="formula">
+        SF = Coeff.Wu,DL + Coeff.Wu,LL × l
+    </div>
+    <div class="calculation-block">
+        <code>For Example : ((0.4 × Wu_DL) + (0.45 × Wu_LL)) × 4.8</code>
+    </div>
+    
+    <p><strong>1. At end supports (SF1)</strong></p>
+    <div class="calculation-block">
+        SF1 = ((0.4 × 90) + (0.45 × 45)) × 4.8 = <span class="result">270 kN</span>
+    </div>
+    
+    <p><strong>2. At supports next to the end supports</strong></p>
+    
+    <p><strong>2.1 Outer side (SF2)</strong></p>
+    <div class="calculation-block">
+        SF2 = ((0.5 × 90) + (0.6 × 45)) × 4.8 = <span class="result">388.8 kN</span>
+    </div>
+    
+    <p><strong>2.2 Inner side (SF3)</strong></p>
+    <div class="calculation-block">
+        SF3 = ((0.55 × 90) + (0.6 × 45)) × 5.05 = <span class="result">386.325 kN</span>
+    </div>
+    
+    <p><strong>3. At all other interior supports (SF4)</strong></p>
+    <div class="calculation-block">
+        SF4 = ((0.5 × 90) + (0.6 × 45)) × 5.3 = <span class="result">381.6 kN</span>
+    </div>
+    
+    <h4>4. Bending Moments</h4>
+    <p><strong>Formula used</strong></p>
+    <div class="formula">
+        $$Mu = \left( \frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{10} \right) × l^2$$
+    </div>
+    
+    <p><strong>1. Span moments</strong></p>
+    
+    <p><strong>1.1 Near middle of end span</strong></p>
+    <div class="formula">
+        $$M1 = 1 \left( \frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{10} \right) × l^2 = 1 \left( \frac{90}{12} + \frac{45}{10} \right) × 4.8^2 = 276.48 \text{ kNm}$$
+    </div>
+    
+    <p><strong>1.2 At middle of interior span</strong></p>
+    <div class="formula">
+        $$M2 = \left( \frac{W_{DL}}{16} + \frac{W_{LL}}{12} \right) × l^2 = \left( \frac{90}{16} + \frac{45}{12} \right) × 5.05^2 = 239.1 \text{ kNm}$$
+    </div>
+    <div class="formula">
+        $$M3 = \left( \frac{W_{DL}}{16} + \frac{W_{LL}}{12} \right) × l^2 = \left( \frac{90}{16} + \frac{45}{12} \right) × 5.3^2 = 263.34 \text{ kNm}$$
+    </div>
+    
+    <p><strong>2. Support moments</strong></p>
+    
+    <p><strong>At support next to the end supports</strong></p>
+    <div class="formula">
+        $$M4 = -\left( \frac{Wu_{DL}}{10} + \frac{Wu_{LL}}{9} \right) × l^2 = -\left( \frac{90}{10} + \frac{45}{9} \right) × 4.8^2 = -322.56 \text{ kNm}$$
+    </div>
+    
+    <p><strong>At support next to the end supports</strong></p>
+    <div class="formula">
+        $$M5 = -\left( \frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{9} \right) × l^2 = -\left( \frac{90}{12} + \frac{45}{9} \right) × 5.3^2 = -351.125 \text{ kNm}$$
+    </div>
+    
+    <hr>
+</body>
+</html>
