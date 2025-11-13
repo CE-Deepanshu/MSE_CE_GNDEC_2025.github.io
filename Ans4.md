@@ -59,11 +59,11 @@ $Mu = (\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{10}) × l^2$  **(Example)**
 
 **1.1 Near middle of end span**
 
-$M1 = (\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{10}) × l^2  = (\frac{90}{12} + \frac{45}{10}) × 4.8^2 = 276.48 kNm$
+\[\M1 \equal 1 (\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{10}) × \l^2 \equal 1 (\frac{90}{12} + \frac{45}{10}) × \4.8^2 \equal 1 276.48 kNm\]\
 
 **1.2 At middle of interior span**
 
-$M2 = (\frac{Wu_{DL}}{16} + \frac{Wu_{LL}}{12}) × l^2  = (\frac{90}{12} + \frac{45}{10}) × 5.05^2 = 239.1 kNm$
+$M2 = (\frac{Wu_{DL}}{16} + \frac{Wu_{LL}}{12}) × l^2  (\frac{90}{12} + \frac{45}{10}) × 5.05^2 = 239.1 kNm$
 
 $M3 = (\frac{Wu_{DL}}{16} + \frac{Wu_{LL}}{12}) × l^2  = (\frac{90}{16} + \frac{45}{12}) × 5.3^2 = 263.34  kNm$
 
@@ -78,6 +78,14 @@ $M4 = -( \frac{Wu_{DL}}{10} + \frac{Wu_{LL}}{9}) × l^2 = -(\frac{90}{10} + \fra
 $M5 = -(\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{9}) × l^2  =  -(\frac{90}{12} + \frac{45}{9}) × 5.3^2 = -351.125 kNm$
 
 ```
+markdown: kramdown
+```
+
+```
+<script type="text/x-mathjax-config">
+ <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -87,9 +95,4 @@ $M5 = -(\frac{Wu_{DL}}{12} + \frac{Wu_{LL}}{9}) × l^2  =  -(\frac{90}{12} + \fr
     }
   });
 </script>
-    
-<script type="text/javascript"
-        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
 ```
